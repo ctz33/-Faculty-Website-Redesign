@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Roboto+Condensed|Roboto");
+html,
+body {
+  min-width: 850px;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.4em; }
+
+.content-container {
+  margin: 40px auto 0px auto;
+  width: 70%;
+  z-index: 5;
+  position: relative;
+  top: 3em; }
+
+a {
+  color: #ae190e; }
+
+a:hover {
+  color: #f37066; }
+
+a:visited {
+  color: #6d0f09; }
+
+h1, h2, h3, h4 {
+  color: #ae190e; }
+
+table {
+  font-family: 'Roboto Condensed', sans-serif; }

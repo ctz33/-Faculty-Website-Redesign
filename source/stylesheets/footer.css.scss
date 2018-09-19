@@ -1,0 +1,23 @@
+// Author: Mike
+// Created: 6/21
+// Edit: N/A
+// Description: Set the background color, text color, height of the footer
+
+footer {
+  height: 5em;
+  width: 100%;
+  background-color: #ae190e;
+  position: relative;
+  top: 3em; }
+
+footer p {
+  color: white;
+  line-height: 5em;
+  text-align: center;
+  margin: 0;
+  }
+
+footer a {
+  color: white;
+  padding-left: 1em;
+}

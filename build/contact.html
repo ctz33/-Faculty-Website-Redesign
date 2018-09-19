@@ -1,0 +1,146 @@
+<!--
+  Created by: Channing Jacobs
+  Date: 6/20
+  Description: Layout of each HTML page used for static site generation. A
+  partial is used for the nav bar at the top and the footer at the bottom. The
+  body html is yielded to each page that is loaded.
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title>Contact Information</title>
+    <!-- Global css and linking -->
+    <base target="_top">
+  	<link rel="stylesheet" href="stylesheets/site.css" />
+  	<link rel="stylesheet" href="stylesheets/navigation.css" />
+  	<link rel="stylesheet" href="stylesheets/footer.css" />
+    <link rel="stylesheet" href="stylesheets/fontawesome-5.1.0/css/all.css" />
+    <!-- Specific css for individual page -->
+    <link rel="stylesheet" href="stylesheets/contact.css"/>
+  </head>
+  <body id="main">
+    <!--
+  Created by: Channing Jacobs
+  Date: 6/20
+  Description: Layout of the navigation bar for use at the top of each page.
+  Edit: 6/23 Ariel add icons and background for active nav element
+-->
+<div class="navbar">
+  <nav id="sitenav">
+    <a href="index.html" >  Home</a>
+    <a href="publication.html" >   Publications</a>
+    <a href="awards.html" >   Awards</a>
+    <div class='dropdown' >
+      Lab
+      <div class="dropdown-content">
+        <a href="lab.html" >    Lab</a>
+        <a href="lab.html#people_nav">   People</a>
+        <a href="lab.html#project_nav">    Projects</a>
+      </div>
+    </div>
+    <a href="contact.html" class='active'><i class='fas fa-envelope'></i>  Contact</a>
+  </nav>
+</div>
+
+    <div class="content-container">
+    <!-- Author: Gail Chen
+Created: 6/20
+Edit: 6/21 Gail centered contents and aligned text.
+Edit: 6/24 Gail use asset helper to send emails, use tag helpers to add images.
+Edit: 6/24 Gail uses embeded ruby code to display images.
+Description: Contact information page with contact information, photos and links to personal pages. -->
+
+<div class="center" id="professional-info">
+	<!-- Contact Information -->
+	<h1 class="info">Contact Information</h1>
+	<ul class="info">
+		<!-- Produce: <a href="mailto: cstewart@cse.ohio-state.edu>cstewart@cse.ohio-state.edu</a> -->
+		<li>Email: <a href="mailto:cstewart@cse.ohio-state.edu">cstewart@cse.ohio-state.edu</a></li>
+		<li>Office: RM 793</li>
+		<li>Office phone: (614) 292-7325</li>
+		<li>Department of Computer Science and Engineering<br/>
+				The Ohio State University<br/>
+				395 Dreese Lab<br/></li>
+	</ul>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3056.2756581058616!2d-83.01805838495038!3d40.00228978866487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88388e96667ad0bf%3A0xa2545e3761fd783c!2s2015+Neil+Ave%2C+Columbus%2C+OH+43210!5e0!3m2!1sen!2sus!4v1529622614085" width="550" height="300" style="border:0" allowfullscreen></iframe>
+
+	<!-- Thumbnail Slider -->
+	<h1 class="photo">Press Photos</h1>
+	<p>The following photos are in the public domain and may be used freely.</p>
+	<div class="content" id="photos">
+		<div class="outer">
+			<div class="container">
+				<div class="slider">
+					<input type="radio" name="slide_switch" id="id1" checked/>
+						<label for="id1">
+							<!-- Example result: <img src="images/cstewart.2018.jpg" title = "Professional image for web content (Low Quality 141 x 98)" /> -->
+							<img src="images/cstewart.2018.jpg" title="Professional image for web content (Low Quality 141 x 98)" alt="image not available" />
+						</label>
+						<!-- Example result: <img class = "object-fit_contain" src="images/cstewart.2018.jpg" title = "Professional image for web content (Low Quality 141 x 98)" /> -->
+						<img class="object-fit_contain" src="images/cstewart.2018.jpg" title="Professional image for web content (Low Quality 141 x 98)" alt="image not available" />
+							<input type="radio" name="slide_switch" id="id2"/>
+						<label for="id2">
+							<!-- Example result: <img src="images/cstewart.2018.jpg" title = "Professional image for web content (Low Quality 141 x 98)" /> -->
+							<img src="images/ohiopic2.jpg" title="Professional image for print (Higher quality 389 x 569)" alt="image not available" />
+						</label>
+						<!-- Example result: <img class = "object-fit_contain" src="images/cstewart.2018.jpg" title = "Professional image for web content (Low Quality 141 x 98)" /> -->
+						<img class="object-fit_contain" src="images/ohiopic2.jpg" title="Professional image for print (Higher quality 389 x 569)" alt="image not available" />
+							<input type="radio" name="slide_switch" id="id3"/>
+						<label for="id3">
+							<!-- Example result: <img src="images/cstewart.2018.jpg" title = "Professional image for web content (Low Quality 141 x 98)" /> -->
+							<img src="images/chris1-lores.jpg" title="Casual image for web content (Quality)" alt="image not available" />
+						</label>
+						<!-- Example result: <img class = "object-fit_contain" src="images/cstewart.2018.jpg" title = "Professional image for web content (Low Quality 141 x 98)" /> -->
+						<img class="object-fit_contain" src="images/chris1-lores.jpg" title="Casual image for web content (Quality)" alt="image not available" />
+							<input type="radio" name="slide_switch" id="id4"/>
+						<label for="id4">
+							<!-- Example result: <img src="images/cstewart.2018.jpg" title = "Professional image for web content (Low Quality 141 x 98)" /> -->
+							<img src="images/chris1-crop.jpg" title="Casual image for print (High quality 1789 x 2190)" alt="image not available" />
+						</label>
+						<!-- Example result: <img class = "object-fit_contain" src="images/cstewart.2018.jpg" title = "Professional image for web content (Low Quality 141 x 98)" /> -->
+						<img class="object-fit_contain" src="images/chris1-crop.jpg" title="Casual image for print (High quality 1789 x 2190)" alt="image not available" />
+							<input type="radio" name="slide_switch" id="id5"/>
+						<label for="id5">
+							<!-- Example result: <img src="images/cstewart.2018.jpg" title = "Professional image for web content (Low Quality 141 x 98)" /> -->
+							<img src="images/rerout-bw.jpg" title="ReRout Lab Logo in black and white" alt="image not available" />
+						</label>
+						<!-- Example result: <img class = "object-fit_contain" src="images/cstewart.2018.jpg" title = "Professional image for web content (Low Quality 141 x 98)" /> -->
+						<img class="object-fit_contain" src="images/rerout-bw.jpg" title="ReRout Lab Logo in black and white" alt="image not available" />
+							<input type="radio" name="slide_switch" id="id6"/>
+						<label for="id6">
+							<!-- Example result: <img src="images/cstewart.2018.jpg" title = "Professional image for web content (Low Quality 141 x 98)" /> -->
+							<img src="images/rerout-sg.jpg" title="ReRout Lab logo in scarlet and grey" alt="image not available" />
+						</label>
+						<!-- Example result: <img class = "object-fit_contain" src="images/cstewart.2018.jpg" title = "Professional image for web content (Low Quality 141 x 98)" /> -->
+						<img class="object-fit_contain" src="images/rerout-sg.jpg" title="ReRout Lab logo in scarlet and grey" alt="image not available" />
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<br/>
+
+<!-- Links to personal pages -->
+<div class="content" id="info-links">
+	<p>
+		<a href="https://plus.google.com/u/0/+ChristopherStewartPhD">Google+ <img src="images/google+.png" alt="image not available" /></a> |
+		<a href="https://scholar.google.com/citations?user=iYgWtREAAAAJ&hl=en">Google Scholar <img src="images/scholar.png" alt="image not available" /></a> |
+		<a href="https://www.facebook.com/christopher.charles.stewart">Facebook <img src="images/facebook.png" alt="image not available" /></a> |
+		<a href="../data/cstewart.cv.pdf">Curriculum Vitae (out of date)</a>
+	</p>
+</div>
+
+    </div>
+    <!-- Author: Mike -->
+<!-- Created: 6/20 -->
+<!-- Edit: 6/24 Gail used asset helper to send emails. -->
+<!-- Description: The footer shows the webpage is designed by the team MAGiC and allows the users to reach the team via email.-->
+
+<footer>
+	<p>Design by MAG&iexcl;C <a href="mailto:osu.magic.team@gmail.com">Email Us</a></p>
+</footer>
+
+  </body>
+</html>

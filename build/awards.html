@@ -1,0 +1,533 @@
+<!--
+  Created by: Channing Jacobs
+  Date: 6/20
+  Description: Layout of each HTML page used for static site generation. A
+  partial is used for the nav bar at the top and the footer at the bottom. The
+  body html is yielded to each page that is loaded.
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title>Awards</title>
+    <!-- Global css and linking -->
+    <base target="_top">
+  	<link rel="stylesheet" href="stylesheets/site.css" />
+  	<link rel="stylesheet" href="stylesheets/navigation.css" />
+  	<link rel="stylesheet" href="stylesheets/footer.css" />
+    <link rel="stylesheet" href="stylesheets/fontawesome-5.1.0/css/all.css" />
+    <!-- Specific css for individual page -->
+    <link rel="stylesheet" href="stylesheets/awards.css"/>
+  </head>
+  <body id="main">
+    <!--
+  Created by: Channing Jacobs
+  Date: 6/20
+  Description: Layout of the navigation bar for use at the top of each page.
+  Edit: 6/23 Ariel add icons and background for active nav element
+-->
+<div class="navbar">
+  <nav id="sitenav">
+    <a href="index.html" >  Home</a>
+    <a href="publication.html" >   Publications</a>
+    <a href="awards.html" class='active'><i class='fas fa-award'></i>   Awards</a>
+    <div class='dropdown' >
+      Lab
+      <div class="dropdown-content">
+        <a href="lab.html" >    Lab</a>
+        <a href="lab.html#people_nav">   People</a>
+        <a href="lab.html#project_nav">    Projects</a>
+      </div>
+    </div>
+    <a href="contact.html" >  Contact</a>
+  </nav>
+</div>
+
+    <div class="content-container">
+    <!--
+  Created by: Channing Jacobs
+  Date: 6/24
+  Description: Awards HTML page generation.
+-->
+
+
+<div id="awards_heading">
+  <h1 id="favorite_awards_nav">Awards and Accomplishments</h1>
+</div>
+
+<div id="awards_container">
+
+    <div id="favorite_awards">
+    <h2><i class="fas fa-trophy"></i> Favorite Awards</h2>
+
+  <div class="award_content">
+      <h4>Revision Path Interview (2014)</h4>
+    <p>RevisionPath highlights young, black leaders in technology. In September 2014, Dr. Stewart was highlighted. Joining a list of acclaimed technologists, e.g., Frederick Townes (founder of Mashable) and Kevin Johnson (CEO of Johnson Media).</p>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4>NSF CAREER Award (2014)</h4>
+    <p>As Internet services scale out their energy and carbon footprints increase. Unfortunately, to keep energy costs low, datacenters are often located in places with cheap but dirty energy sources---excacerbating carbon footprints. Our idea, Greening as a Service, uses renewable energy credits or carbon offsets to eliminate carbon footprints for only users that explicitly request clean-powered service. Datagreening.com is one of our first prototypes of a greening service (for email).</p>
+      <a href="https://www.datagreening.com" class="link">[info]</a>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4>Best Paper, IEEE Interational Symposium on Modeling, Analysis, and Simulation of Computer and Telecomunication Systems (MASCOTS 2010)</h4>
+    <p>Entomodel: Understanding and Avoding Performance Bugs uncovered emergent behaviors of common performance bugs. The conference steering committee awarded it best paper from 127 submissions.</p>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4>Third Best Paper, IEEE International Symposium on Sustainable Systems & Technologies (ISSST 2011)</h4>
+    <p>Concentrating Renewable Energy in Grid-Tied Datacenters described an approach assign electric joules to specific applications in a datacenter, especially joules created by on-site solar panels or wind turbines. This paper won third best.</p>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4>Co-Chair, Workshop on Diversity in Systems Research, 2013</h4>
+    <p>The Workshop on Diversity in Systems Research is a mentoring activity for students persuing a PhD in systems research, especially women and minorities. Many of the world's most prominent researchers speak at Diversity every year. I was honored to be the first externally chosen chair for this workshop.</p>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4>Provost Fellowship, University of Rochester, 2003</h4>
+    <p></p>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4 id="other_awards_nav">President's Scholarship, Morehouse College, 1999</h4>
+    <p></p>
+    <hr />
+  </div>
+
+    </div>
+    <br />
+    <div id="other_awards">
+    <h2><i class="fas fa-trophy"></i> Other Awards</h2>
+
+
+
+  <div class="award_content">
+      <h4>April 2016</h4>
+    <p>Our Infocom 2016 paper was given the Best-In-Session Presentation Award.</p>
+      <a href="http://web.cse.ohio-state.edu/~cstewart/Papers/xu2016blending.pdf" class="link">[info]</a>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4>March 2016</h4>
+    <p>PhD Candidate Jaimie Kelley won the 2016 CSE Research Competition, a department-wide competition between all active PhD and master students.  Congrats, Jaimie!</p>
+      <a href="https://cse.osu.edu/events/2016/02/10th-annual-student-research-poster-exhibit" class="link">[info]</a>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4>September 2014</h4>
+    <p>Dr. Stewart was interviewed for RevisionPath, a forum that highlights young, black leaders</p>
+      <a href="http://revisionpath.com/dr-christopher-charles-stewart/" class="link">[info]</a>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4>January 2014</h4>
+    <p>Datagreening.com is now Beta mode and open to the public.  We are</p>
+      <a href="http://www.datagreening.com" class="link">[info]</a>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4>January 2014</h4>
+    <p>Dr. Stewart was awarded the NSF CAREER Award for his research on greening services.</p>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4>June 2013</h4>
+    <p>Dr. Stewart was award an NSF CSR Grant for his research performance dependable key-value stores, especially those supporting rapidly growing data.</p>
+      <a href="rerout.html" class="link">[info]</a>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4>April 2013</h4>
+    <p>The ReRout lab is the Ohio State host to FIONA, an outreach project for middle school girls interested in computer science.  NCWIT awarded the grant for this program.</p>
+      <a href="http://www.futureinnovatorsofna.org/2013/09/28/fiona-has-begun/" class="link">[info]</a>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4>March 2013</h4>
+    <p>I am on the program committee for USENIX ICAC</p>
+      <a href="https://www.usenix.org/conference/icac13" class="link">[info]</a>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4>March 2013</h4>
+    <p>I am on the program committee for IWQoS 2013</p>
+      <a href="http://www.ieee-iwqos.org/" class="link">[info]</a>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4>March 2013</h4>
+    <p>I was selected to attend the NSF Career Workshop at Temple University</p>
+      <a href="http://www.cis.temple.edu/NSFCareer2013" class="link">[info]</a>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4>November 2013</h4>
+    <p>Dr. Stewart served (with Vishakha Gupta) as the first ever externally selected chair of the Workshop on Diversity in Systems Research.  It was truly an honor to be selected and to serve this community.</p>
+      <a href="http://www.cse.ohio-state.edu/~cstewart/Diversity2013/" class="link">[info]</a>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4>August 2013</h4>
+    <p>We hosted an outreach event that pitted 8th graders against our research-prototype QA system. Next up FIONA! :)</p>
+      <a href="https://www.youtube.com/watch?v=eiA5Uo1uJHI%20" class="link">[info]</a>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4>June 2012</h4>
+    <p>Dr. Stewart was award an NSF EAGER grant for work on renewable-powered datacenters.</p>
+      <a href="Papers/dengissst12.pdf" class="link">[info]</a>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4>May 2012</h4>
+    <p>In a large west coast tour, I introduced Zoolander to researchers at VMWare, Google, Microsoft, and Pacific Northewest National Labs.  Thanks to JD, Arif, Jian, and Rean for hosting me.</p>
+      <a href="Papers/wct12.pdf" class="link">[info]</a>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4>January 2012</h4>
+    <p>I am the editor for the IEEE Sustainable Computing Register.  I am interested in ensuring that we can sustain today's computing systems for future generations.  If you are too, join the STC.</p>
+      <a href="https://sites.google.com/a/ieee.net/stc-sustainable-computing/newsletter" class="link">[info]</a>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4>January 2012</h4>
+    <p>I will serve on the program committee for GreenMetrics 2012</p>
+      <a href="http://www.sigmetrics.org/" class="link">[info]</a>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4>July 2011</h4>
+    <p>I will serve on the program committee for Sigmetrics 2012</p>
+      <a href="http://www.sigmetrics.org/" class="link">[info]</a>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4>May 2011</h4>
+    <p>Nan Deng received third best paper award at ISSST in Chicago.</p>
+      <a href="http://www.cse.ohio-state.edu/~cstewart/Papers/dengissst11.pdf" class="link">[info]</a>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4>October 2010</h4>
+    <p>Nan Deng will present our poster at OSDI.  The title is Tracking and Exploiting Renewable Energy in Grid-Tied Datacenters.  This poster later turned into an award paper at ISSST.</p>
+      <a href="http://www.cse.ohio-state.edu/~cstewart/Papers/dengosdi2010-poster.pdf" class="link">[info]</a>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4>September 2010</h4>
+    <p>I mentored 2 fantastic undergraduate students over the summer as a part of the DREU program.  Click to learn more about their work on renewable-energy datacenters.</p>
+      <a href="http://www.cse.ohio-state.edu/~cstewart/students.html#joel.tchoko" class="link">[info]</a>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4>August 2010</h4>
+    <p>Nominated for the best paper award at MASCOTS 2010 for my work on performance anomalies.</p>
+      <a href="http://mascots2010.cis.fiu.edu/" class="link">[info]</a>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4>August  2010</h4>
+    <p>August  2010   My paper, EntomoModel: Understanding and Avoiding Performance Anomaly Manifestations, won the Best Paper Award at MASCOTS 2010.</p>
+      <a href="http://www.cse.ohio-state.edu/~cstewart/Papers/stewartmascots10.pdf%20" class="link">[info]</a>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4>July 2010</h4>
+    <p>Panel member for the Summer Research Opportunities Program (SROP) hosted by the CIC.</p>
+      <a href="http://www.cic.net/Home/Students/SROP/Home.aspx" class="link">[info]</a>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4>March 2010</h4>
+    <p>I will serve on the GreenMetrics 2010 program committee.  Please submit.</p>
+      <a href="http://www.cse.ohio-state.edu/~cstewart/GreenMetrics_cfp.pdf" class="link">[info]</a>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4>January 2010</h4>
+    <p>I will speak at Indiana University-Purdue University Indianapolis in April.</p>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4>January 2010</h4>
+    <p>Invited talk in February at TU Dresden.</p>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4>August 2010</h4>
+    <p>I am on the program committee for DSN 2011.</p>
+      <a href="http://www.dsn.org/organizers.html" class="link">[info]</a>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4>December 2009</h4>
+    <p>My group has been awarded an Amazon Web Services equipment grant!</p>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4>December 2009</h4>
+    <p>I served as a reviewer on an NSF Panel.</p>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4>October 2009</h4>
+    <p>I spoke about time management at DIVERSITY, a workshop co-located with SOSP.</p>
+      <a href="http://www.sigops.org/sosp/sosp09/diversity.html" class="link">[info]</a>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4>October 2009</h4>
+    <p>I have been invited to an NSF panel.</p>
+      <a href="http://www.cse.ohio-state.edu/" class="link">[info]</a>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4>September 2009</h4>
+    <p>On September 25, we will (re-)initiate The Ohio State systems group meetings.  This weekly meeting will cover topics that broadly interest systems faculty and graduate students, including practice talks for conferences and jobs, new research ideas, and reports from recent conference trips.  Contact Srini, Radu, or myself for more information.</p>
+      <a href="http://www.cse.ohio-state.edu/" class="link">[info]</a>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4>September 2009</h4>
+    <p>I represented the systems group during graduate student orientation.</p>
+      <a href="http://www.cse.ohio-state.edu/~cstewart/misc/systems-intro-sep-2009.ppt" class="link">[info]</a>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4>August 2009</h4>
+    <p>My ongoing work about managing datacenter workloads to get the most from renewable energy was accepted by HotPower 2009.</p>
+      <a href="http://hotpower09.stanford.edu/" class="link">[info]</a>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4>August 2009</h4>
+    <p>I will be on the program committee for ICPP 2010.</p>
+      <a href="http://www.cse.ohio-state.edu/~lai/icpp2010/index.html" class="link">[info]</a>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4>August 2009</h4>
+    <p>I will be an invited panelist at the SOSP Diversity Workshop.  I will speak about time management for graduate students.</p>
+      <a href="http://www.sigops.org/sosp/sosp09/diversity.html" class="link">[info]</a>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4>July 2009</h4>
+    <p>I will be on the program committee for DSN 2010.</p>
+      <a href="http://www.dsn.org/organizers.html" class="link">[info]</a>
+    <hr />
+  </div>
+
+
+
+
+  <div class="award_content">
+      <h4>July 2009</h4>
+    <p>My new website at The Ohio State University is now public. Thanks for visiting.</p>
+      <a href="http://www.cse.ohio-state.edu/~cstewart/index.html" class="link">[info]</a>
+    <hr />
+  </div>
+
+
+    </div>
+    <br />
+</div>
+
+<!-- Side menu to jump to favorite and other awards -->
+<div id="awards_sidebar">
+  <div>
+    Awards
+  </div>
+  <div>
+    <a href="#favorite_awards_nav">Favorite</a>
+  </div>
+  <div>
+    <a href="#other_awards_nav">Other</a>
+  </div>
+</div>
+
+    </div>
+    <!-- Author: Mike -->
+<!-- Created: 6/20 -->
+<!-- Edit: 6/24 Gail used asset helper to send emails. -->
+<!-- Description: The footer shows the webpage is designed by the team MAGiC and allows the users to reach the team via email.-->
+
+<footer>
+	<p>Design by MAG&iexcl;C <a href="mailto:osu.magic.team@gmail.com">Email Us</a></p>
+</footer>
+
+  </body>
+</html>

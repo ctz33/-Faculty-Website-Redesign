@@ -1,0 +1,70 @@
+---
+title: Contact Information
+css: contact.css
+---
+
+<!-- Author: Gail Chen
+Created: 6/20
+Edit: 6/21 Gail centered contents and aligned text.
+Edit: 6/24 Gail use asset helper to send emails, use tag helpers to add images.
+Edit: 6/24 Gail uses embeded ruby code to display images.
+Description: Contact information page with contact information, photos and links to personal pages. -->
+
+<div class="center" id="professional-info">
+	<!-- Contact Information -->
+	<h1 class="info">Contact Information</h1>
+	<ul class="info">
+		<!-- Produce: <a href="mailto: cstewart@cse.ohio-state.edu>cstewart@cse.ohio-state.edu</a> -->
+		<li>Email: <%= mail_to 'cstewart@cse.ohio-state.edu', 'cstewart@cse.ohio-state.edu'%></li>
+		<li>Office: RM 793</li>
+		<li>Office phone: (614) 292-7325</li>
+		<li>Department of Computer Science and Engineering<br/>
+				The Ohio State University<br/>
+				395 Dreese Lab<br/></li>
+	</ul>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3056.2756581058616!2d-83.01805838495038!3d40.00228978866487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88388e96667ad0bf%3A0xa2545e3761fd783c!2s2015+Neil+Ave%2C+Columbus%2C+OH+43210!5e0!3m2!1sen!2sus!4v1529622614085" width="550" height="300" style="border:0" allowfullscreen></iframe>
+
+	<!-- Thumbnail Slider -->
+	<h1 class="photo">Press Photos</h1>
+	<p>The following photos are in the public domain and may be used freely.</p>
+	<div class="content" id="photos">
+		<div class="outer">
+			<div class="container">
+				<div class="slider">
+					<% img_info = Hash.new %>
+					<% img_info["images/cstewart.2018.jpg"] = "Professional image for web content (Low Quality 141 x 98)" %>
+					<% img_info["images/ohiopic2.jpg"] = "Professional image for print (Higher quality 389 x 569)" %>
+					<% img_info["images/chris1-lores.jpg"] = "Casual image for web content (Quality)" %>
+					<% img_info["images/chris1-crop.jpg"] = "Casual image for print (High quality 1789 x 2190)" %>
+					<% img_info["images/rerout-bw.jpg"] = "ReRout Lab Logo in black and white" %>
+					<% img_info["images/rerout-sg.jpg"] = "ReRout Lab logo in scarlet and grey" %>
+					<% i = 1 %>
+					<input type="radio" name="slide_switch" id="<%="id"+"#{i}"%>" checked/>
+					<% img_info.each do |k, v| %>
+						<label for="<%="id"+"#{i}"%>">
+							<!-- Example result: <img src="images/cstewart.2018.jpg" title = "Professional image for web content (Low Quality 141 x 98)" /> -->
+							<%= tag :img, :src => k, :title => v, :alt => "image not available"%>
+							<% i+=1 %>
+						</label>
+						<!-- Example result: <img class = "object-fit_contain" src="images/cstewart.2018.jpg" title = "Professional image for web content (Low Quality 141 x 98)" /> -->
+						<%= tag :img, :class => "object-fit_contain", :src => k, :title => v, :alt => "image not available"%>
+						<% if i <= 6%>
+							<input type="radio" name="slide_switch" id="<%="id"+"#{i}"%>"/>
+						<% end %>
+					<% end %>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<br/>
+
+<!-- Links to personal pages -->
+<div class="content" id="info-links">
+	<p>
+		<a href="https://plus.google.com/u/0/+ChristopherStewartPhD">Google+ <%= tag :img, :src => "images/google+.png", :alt => "image not available" %></a> |
+		<a href="https://scholar.google.com/citations?user=iYgWtREAAAAJ&hl=en">Google Scholar <%= tag :img, :src => "images/scholar.png", :alt => "image not available" %></a> |
+		<a href="https://www.facebook.com/christopher.charles.stewart">Facebook <%= tag :img, :src => "images/facebook.png", :alt => "image not available" %></a> |
+		<a href="../data/cstewart.cv.pdf">Curriculum Vitae (out of date)</a>
+	</p>
+</div>

@@ -1,0 +1,30 @@
+<!--
+  Created by: Channing Jacobs
+  Date: 6/20
+  Description: Layout of each HTML page used for static site generation. A
+  partial is used for the nav bar at the top and the footer at the bottom. The
+  body html is yielded to each page that is loaded.
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title><%= current_page.data.title || "No Frontmatter" %></title>
+    <!-- Global css and linking -->
+    <base target="_top">
+  	<link rel="stylesheet" href="stylesheets/site.css" />
+  	<link rel="stylesheet" href="stylesheets/navigation.css" />
+  	<link rel="stylesheet" href="stylesheets/footer.css" />
+    <link rel="stylesheet" href="stylesheets/fontawesome-5.1.0/css/all.css" />
+    <!-- Specific css for individual page -->
+    <link rel="stylesheet" href="stylesheets/<%= current_page.data.css %>"/>
+  </head>
+  <body id="main">
+    <%= partial "navigation" %>
+    <div class="content-container">
+    <%= yield %>
+    </div>
+    <%= partial "footer" %>
+  </body>
+</html>

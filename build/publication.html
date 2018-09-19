@@ -1,0 +1,1642 @@
+<!--
+  Created by: Channing Jacobs
+  Date: 6/20
+  Description: Layout of each HTML page used for static site generation. A
+  partial is used for the nav bar at the top and the footer at the bottom. The
+  body html is yielded to each page that is loaded.
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title>Publication</title>
+    <!-- Global css and linking -->
+    <base target="_top">
+  	<link rel="stylesheet" href="stylesheets/site.css" />
+  	<link rel="stylesheet" href="stylesheets/navigation.css" />
+  	<link rel="stylesheet" href="stylesheets/footer.css" />
+    <link rel="stylesheet" href="stylesheets/fontawesome-5.1.0/css/all.css" />
+    <!-- Specific css for individual page -->
+    <link rel="stylesheet" href="stylesheets/publication.css"/>
+  </head>
+  <body id="main">
+    <!--
+  Created by: Channing Jacobs
+  Date: 6/20
+  Description: Layout of the navigation bar for use at the top of each page.
+  Edit: 6/23 Ariel add icons and background for active nav element
+-->
+<div class="navbar">
+  <nav id="sitenav">
+    <a href="index.html" >  Home</a>
+    <a href="publication.html" class='active'><i class='fas fa-book-open'></i>   Publications</a>
+    <a href="awards.html" >   Awards</a>
+    <div class='dropdown' >
+      Lab
+      <div class="dropdown-content">
+        <a href="lab.html" >    Lab</a>
+        <a href="lab.html#people_nav">   People</a>
+        <a href="lab.html#project_nav">    Projects</a>
+      </div>
+    </div>
+    <a href="contact.html" >  Contact</a>
+  </nav>
+</div>
+
+    <div class="content-container">
+    <!-- Author: Mike Lin
+Created: 6/20
+Edit: 6/25 Gail modifiedy to pass validation test
+Description: Show publications in a table ordered by years. Each publication
+has a title, authors, a place of publication and links to the published
+articles, powerpoints, event's website and publication's bibtex.
+-->
+
+<!--Author: Mike
+	Created: 6/20
+	Edit: Mike 6/21 Add sidebar
+	-->
+
+
+<div id="publication">
+	<h1>Publications</h1>
+	<a href="https://www.cs.rutgers.edu/~ricardob/note.html" class="publication-standard">CS publishing standards</a>
+	<div id="publication-year-sidebar">
+		<div>
+			<a href="#year-2018">
+				2018
+			</a>
+		</div>
+		<div>
+			<a href="#year-2017">
+				2017
+			</a>
+		</div>
+		<div>
+			<a href="#year-2016">
+				2016
+			</a>
+		</div>
+		<div>
+			<a href="#year-2015">
+				2015
+			</a>
+		</div>
+		<div>
+			<a href="#year-2014">
+				2014
+			</a>
+		</div>
+		<div>
+			<a href="#year-2013">
+				2013
+			</a>
+		</div>
+		<div>
+			<a href="#year-2012">
+				2012
+			</a>
+		</div>
+		<div>
+			<a href="#year-2011">
+				2011
+			</a>
+		</div>
+		<div>
+			<a href="#year-2010">
+				2010
+			</a>
+		</div>
+		<div>
+			<a href="#year-2009">
+				2009
+			</a>
+		</div>
+		<div>
+			<a href="#year-2008">
+				2008
+			</a>
+		</div>
+		<div>
+			<a href="#year-2007">
+				2007
+			</a>
+		</div>
+		<div>
+			<a href="#year-2006">
+				2006
+			</a>
+		</div>
+		<div>
+			<a href="#year-2005">
+				2005
+			</a>
+		</div>
+		<div>
+			<a href="#year-2004">
+				2004
+			</a>
+		</div>
+	</div>
+
+	<span id="year-2018" class="anchor"></span>
+	<div class="year">
+		2018
+	</div>
+	<table class="table">
+
+		<tr>
+			<th class="title">Title</th>
+			<th class="author">Author</th>
+			<th class="event">Event</th>
+			<th class="location">Location</th>
+			<th class="link">Link</th>
+		</tr>
+
+		<tr>
+			<td class="title">
+				Model-driven Computational Sprinting
+			</td>
+			<td class="author">
+				Nathaniel Morris, Christopher Stewart, Lydia Chen, Robert Birke, Jaimie Kelley
+			</td>
+			<td class="event">
+				ACM European Conference on Computer Systems
+			</td>
+			<td class="location">
+				Porto, Portugal
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/morris2018modeldriven.pdf">pdf</a><br />
+				<a class="ppt" href="http://www.cse.ohio-state.edu/~cstewart/Papers/morris2018modeldriven-slides.pdf">ppt</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/morris2018modeldriven">bibtex</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				Characterizing Computational Workloads in UAV Applications
+			</td>
+			<td class="author">
+				Jayson Boubin, Shiqi Zhang, Venkata Mandadapu, Christopher Stewart
+			</td>
+			<td class="event">
+				IEEE Internet-of-Things Design and Implementation
+			</td>
+			<td class="location">
+				Orlando, Florida
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/boubin2018characterizing.pdf">pdf</a><br />
+				<a class="ppt" href="http://www.cse.ohio-state.edu/~cstewart/Papers/boubin2018characterizing-slides.pdf">ppt</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/boubin2018characterizing">bibtex</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				Assessing Learning Behavior and Cognitive Bias from Web Logs
+			</td>
+			<td class="author">
+				Rashmi Rao, Christopher Stewart, Arnuflo Perez, Siva Renganathan
+			</td>
+			<td class="event">
+				IEEE Frontiers in Education
+			</td>
+			<td class="location">
+				San Jose, CA
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/rao2018assessing.pdf">pdf</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/rao2018assessing">bibtex</a><br />
+				<a class="event" href="http://fie2018.org">event</a><br />
+			</td>
+		</tr>
+
+	</table>
+	<span id="year-2017" class="anchor"></span>
+	<div class="year">
+		2017
+	</div>
+	<table class="table">
+
+		<tr>
+			<th class="title">Title</th>
+			<th class="author">Author</th>
+			<th class="event">Event</th>
+			<th class="location">Location</th>
+			<th class="link">Link</th>
+		</tr>
+
+		<tr>
+			<td class="title">
+				Preliminary Results on an Interactive Learning Tool for Early Algebra Education
+			</td>
+			<td class="author">
+				Siva Renganathan, Christopher Stewart, Arnulfo Perez, Rashmi Rao, Bailey Braaten
+			</td>
+			<td class="event">
+				IEEE Frontiers in Education
+			</td>
+			<td class="location">
+				Indianapolis, IN
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/siva2017preliminary.pdf">pdf</a><br />
+				<a class="ppt" href="http://www.cse.ohio-state.edu/~cstewart/Papers/siva2017preliminary-slides.pdf">ppt</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/siva2017preliminary">bibtex</a><br />
+				<a class="event" href="http://fie2017.org">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				Early Work on Modeling Computational Sprinting
+			</td>
+			<td class="author">
+				Nathaniel Morris, Christopher Stewart, Robert Birke, Lydia Chen
+			</td>
+			<td class="event">
+				ACM Symposium on Cloud Computing
+			</td>
+			<td class="location">
+				Santa Clara, CA, USA
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/morris2017early.pdf">pdf</a><br />
+				<a class="ppt" href="http://www.cse.ohio-state.edu/~cstewart/Papers/morris2017early-pres.pdf">ppt</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/morris2017early">bibtex</a><br />
+				<a class="event" href="https://acmsocc.github.io/2017/">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				A Pareto Framework for Data Analytics on Heterogeneous Systems: Implications for Green Energy Usage and Performance
+			</td>
+			<td class="author">
+				Aniket Chakrabarti, Srinivasan Parthasarathy, Christopher Stewart
+			</td>
+			<td class="event">
+				IEEE International Conference on Parallel Processing
+			</td>
+			<td class="location">
+				Brighton, UK
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/chakrabarti2017pareto.pdf">pdf</a><br />
+				<a class="ppt" href="http://www.cse.ohio-state.edu/~cstewart/Papers/chakrabarti2017pareto-pres.pptx">ppt</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/chakrabarti2017pareto">bibtex</a><br />
+				<a class="event" href="http://www.icpp-conf.org/2017/index.php">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				Obtaining and Managing Answer Quality for Online Data-Intensive Services
+			</td>
+			<td class="author">
+				Jaimie Kelley, Christopher Stewart, Nathaniel Morris, Devesh Tiwari, Yuxiong He, Sameh Elnikety
+			</td>
+			<td class="event">
+				ACM Transactions on Modeling and Performance Evaluation of Computing Systems 
+			</td>
+			<td class="location">
+				New York, NY
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/kelley2017obtaining.pdf">pdf</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/kelley2017obtaining">bibtex</a><br />
+				<a class="event" href="https://dl.acm.org/citation.cfm?id=3055280">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				Scaling Analytics through Approximate and Distributed Computing
+			</td>
+			<td class="author">
+				Aniket Chakrabarti
+			</td>
+			<td class="event">
+				OSU Masters Thesis
+			</td>
+			<td class="location">
+				Columbus, OH USA
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/chakrabarti2017thesis.pdf">pdf</a><br />
+				<a class="ppt" href="http://www.cse.ohio-state.edu/~cstewart/Papers/chakrabarti2017thesis-pres.pdf">ppt</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/chakrabarti2017thesis">bibtex</a><br />
+				<a class="event" href="https://gradsch.osu.edu/calendar/events/scaling-analytics-through-approximate-and-distributed-computing">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				Resource Allocation using Adaptive Characterization of Online, Data-Intensive Workloads
+			</td>
+			<td class="author">
+				Jaimie Kelley
+			</td>
+			<td class="event">
+				OSU Masters Thesis
+			</td>
+			<td class="location">
+				Columbus, OH USA
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/kelley2017thesis.pdf">pdf</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/kelley2017thesis">bibtex</a><br />
+				<a class="event" href="https://gradsch.osu.edu/calendar/events/resource-allocation-using-adaptive-characterization-online-data-intensive-workloads">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				Modeling learning behaviour and cognitive bias from web logs
+			</td>
+			<td class="author">
+				Rashmi Rao
+			</td>
+			<td class="event">
+				OSU Masters Thesis
+			</td>
+			<td class="location">
+				Columbus, OH USA
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/rao2017thesis.pdf">pdf</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/rao2017thesis">bibtex</a><br />
+				<a class="event" href="http://library.ohio-state.edu/record=b8245815~S7">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				An Interactive Learning Tool for EarlyAlgebra Education: Design, Implementation and Evaluation
+			</td>
+			<td class="author">
+				Siva Meenakshi Renganathan
+			</td>
+			<td class="event">
+				OSU Masters Thesis
+			</td>
+			<td class="location">
+				Columbus, OH USA
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/siva2017thesis.pdf">pdf</a><br />
+				<a class="ppt" href="http://www.cse.ohio-state.edu/~cstewart/Papers/siva2017thesis-pres.pdf">ppt</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/siva2017thesis">bibtex</a><br />
+				<a class="event" href="https://etd.ohiolink.edu/!etd.send_file?accession=osu1492659130106009">event</a><br />
+			</td>
+		</tr>
+
+	</table>
+	<span id="year-2016" class="anchor"></span>
+	<div class="year">
+		2016
+	</div>
+	<table class="table">
+
+		<tr>
+			<th class="title">Title</th>
+			<th class="author">Author</th>
+			<th class="event">Event</th>
+			<th class="location">Location</th>
+			<th class="link">Link</th>
+		</tr>
+
+		<tr>
+			<td class="title">
+				Sprint Ability: How Well Does Your Software Exploit Bursts in Processing Capacity?
+			</td>
+			<td class="author">
+				Nathaniel Morris, Siva Renganathan, Christopher Stewart, Robert Birke, Lydia Chen
+			</td>
+			<td class="event">
+				IEEE International Conference on Autonomic Computing
+			</td>
+			<td class="location">
+				Wurzburg, Germany
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/morris2016sprint.pdf">pdf</a><br />
+				<a class="ppt" href="http://www.cse.ohio-state.edu/~cstewart/Papers/morris2016sprint-pres.pdf">ppt</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/morris2016sprint">bibtex</a><br />
+				<a class="event" href="http://icac2016.uni-wuerzburg.de/program/">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				Adaptive Power Profiling for Many-Core HPC Architectures
+			</td>
+			<td class="author">
+				Jaimie Kelley, Christopher Stewart, Devesh Tiwari, Saurabh Gupta
+			</td>
+			<td class="event">
+				IEEE International Conference on Autonomic Computing
+			</td>
+			<td class="location">
+				Wurzburg, Germany
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/kelley2016adaptive.pdf">pdf</a><br />
+				<a class="ppt" href="http://www.cse.ohio-state.edu/~cstewart/Papers/kelley2016adaptive-pres.pdf">ppt</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/kelley2016adaptive">bibtex</a><br />
+				<a class="event" href="http://icac2016.uni-wuerzburg.de/program/">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				Green- and Heterogeneity-Aware Partitioning for Data Analytics
+			</td>
+			<td class="author">
+				Aniket Chakrabarti, Christopher Stewart, Srini Parthasarathy
+			</td>
+			<td class="event">
+				IEEE International Workshop on Green and Sustainable Networking and Computing
+			</td>
+			<td class="location">
+				San Francisco, CA
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/chakrabarti2016green.pdf">pdf</a><br />
+				<a class="ppt" href="http://www.cse.ohio-state.edu/~cstewart/Papers/chakrabarti2016green-pres.pdf">ppt</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/chakrabarti2016green">bibtex</a><br />
+				<a class="event" href="https://www.lri.fr/~chen/GSNC.htm">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				Blending On-Demand and Spot Instances to Lower Costs for In-Memory Storage (Winner Best-In-Session Presentation)
+			</td>
+			<td class="author">
+				Zichen Xu, Christopher Stewart, Nan Deng, Xiaorui Wang
+			</td>
+			<td class="event">
+				IEEE International Conference on Computer Communications
+			</td>
+			<td class="location">
+				San Francisco, CA
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/xu2016blending.pdf">pdf</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/xu2016blending">bibtex</a><br />
+				<a class="event" href="http://infocom2016.ieee-infocom.org/">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				Early Work on Characterizing Performance Anomalies In Hadoop Architectures
+			</td>
+			<td class="author">
+				Puja Gupta, Christopher Stewart 
+			</td>
+			<td class="event">
+				International Conference on Autonomic Computing
+			</td>
+			<td class="location">
+				Wurzburg, Germany
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/gupta2016early.pdf">pdf</a><br />
+				<a class="ppt" href="http://www.cse.ohio-state.edu/~cstewart/Papers/gupta2016early.pdf">ppt</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/gupta2016early">bibtex</a><br />
+				<a class="event" href="http://icac2016.uni-wuerzburg.de/program/">event</a><br />
+			</td>
+		</tr>
+
+	</table>
+	<span id="year-2015" class="anchor"></span>
+	<div class="year">
+		2015
+	</div>
+	<table class="table">
+
+		<tr>
+			<th class="title">Title</th>
+			<th class="author">Author</th>
+			<th class="event">Event</th>
+			<th class="location">Location</th>
+			<th class="link">Link</th>
+		</tr>
+
+		<tr>
+			<td class="title">
+				Tell-Tale Tails: Decomposing Response Times for Live Internet Services
+			</td>
+			<td class="author">
+				Nan Deng, Zichen Xu, Christopher Stewart, Xiaorui Wang 
+			</td>
+			<td class="event">
+				IEEE International Green and Sustainable Computing Conference
+			</td>
+			<td class="location">
+				Las Vegas, NV
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/dengigsc15.pdf">pdf</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/deng2015tell-tale">bibtex</a><br />
+				<a class="event" href="http://igsc.eecs.wsu.edu/">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				Power-Utilization Provisioning for Data Centers
+			</td>
+			<td class="author">
+				Christopher Stewart, Jing Li
+			</td>
+			<td class="event">
+				IEEE International Green and Sustainable Computing Conference
+			</td>
+			<td class="location">
+				Las Vegas, NV
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/stewartigsc15.pdf">pdf</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/stewart2015power-utilization">bibtex</a><br />
+				<a class="event" href="http://igsc.eecs.wsu.edu/">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				Measuring and Managing Answer Quality for Online Data-Intensive Services
+			</td>
+			<td class="author">
+				Jamie Kelley, Christopher Stewart, Devesh Tiwari, Yuxiong He, Sameh Elnikey, Nathaniel Morris
+			</td>
+			<td class="event">
+				IEEE International Conference on Autonomic Computing
+			</td>
+			<td class="location">
+				Grenoble France
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/kelleyicac15.pdf">pdf</a><br />
+				<a class="ppt" href="http://www.cse.ohio-state.edu/~cstewart/Papers/kelleyicac15-pres.pdf">ppt</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/kelley2015measuring">bibtex</a><br />
+				<a class="event" href="http://icac2015.imag.fr/">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				CADRE: Carbon-Aware Data Replication for Geo-Diverse Services
+			</td>
+			<td class="author">
+				Zichen Xu, Nan Deng, Christopher Stewart, Xiaorui Wang
+			</td>
+			<td class="event">
+				IEEE International Conference on Autonomic Computing
+			</td>
+			<td class="location">
+				Grenoble France
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/xuicac15.pdf">pdf</a><br />
+				<a class="ppt" href="http://www.cse.ohio-state.edu/~cstewart/Papers/xuicac15-pres.pdf">ppt</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/xu2015cadre">bibtex</a><br />
+				<a class="event" href="http://icac2015.imag.fr/">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				Tortoises and Hares Among Online Data-Intensive Queries
+			</td>
+			<td class="author">
+				Christopher Stewart, Jaimie Kelley
+			</td>
+			<td class="event">
+				ACM Wild and Crazy Ideas of ASPLOS 2015
+			</td>
+			<td class="location">
+				Instanbul Turkey
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/stewartwaci2015.pdf">pdf</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/">bibtex</a><br />
+				<a class="event" href="http://asplos15.bilkent.edu.tr/waci.html">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				Replication for Predictability in a Java RPC Framework
+			</td>
+			<td class="author">
+				Jianwei Tu, Christopher Stewart
+			</td>
+			<td class="event">
+				Poster at the International Conference on Autonomic Computing
+			</td>
+			<td class="location">
+				Grenoble France
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/tuicac15.pdf">pdf</a><br />
+				<a class="ppt" href="http://www.cse.ohio-state.edu/~cstewart/Papers/tuicac15.pdf">ppt</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/tu-replication-2015">bibtex</a><br />
+				<a class="event" href="http://icac2015.imag.fr/">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				Recent Trends in High Tail Latency
+			</td>
+			<td class="author">
+				Aaron McCanty
+			</td>
+			<td class="event">
+				Ohio State Technical Report
+			</td>
+			<td class="location">
+				Columbus, OH
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/mccantytechreport15.pdf">pdf</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/mccanty-recent-2015">bibtex</a><br />
+				<a class="event" href="https://cse.osu.edu/research/technical-reports">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				Parallellism in grep: A Case of Parallel Research to Common Computing
+			</td>
+			<td class="author">
+				Lisa Lau
+			</td>
+			<td class="event">
+				Ohio State Technical Report
+			</td>
+			<td class="location">
+				Columbus, OH
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/lautechreport15.pdf">pdf</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/lau-recent-2015">bibtex</a><br />
+				<a class="event" href="https://cse.osu.edu/research/technical-reports">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				New Pattern Matching Approaches Comparison
+			</td>
+			<td class="author">
+				Nima Mokaram
+			</td>
+			<td class="event">
+				Ohio State Technical Report
+			</td>
+			<td class="location">
+				Columbus, OH
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/esmalitechreport15.pdf">pdf</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/mokaram-new-2015">bibtex</a><br />
+				<a class="event" href="https://cse.osu.edu/research/technical-reports">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				Review of Morphus
+			</td>
+			<td class="author">
+				Feysal Ibrahim
+			</td>
+			<td class="event">
+				Ohio State Technical Report (submitted to arXive)
+			</td>
+			<td class="location">
+				Columbus, OH
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/morphus.pdf">pdf</a><br />
+				<a class="ppt" href="http://www.cse.ohio-state.edu/~cstewart/Papers/morphus.pdf">ppt</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/">bibtex</a><br />
+				<a class="event" href="https://cse.osu.edu/research/technical-reports">event</a><br />
+			</td>
+		</tr>
+
+	</table>
+	<span id="year-2014" class="anchor"></span>
+	<div class="year">
+		2014
+	</div>
+	<table class="table">
+
+		<tr>
+			<th class="title">Title</th>
+			<th class="author">Author</th>
+			<th class="event">Event</th>
+			<th class="location">Location</th>
+			<th class="link">Link</th>
+		</tr>
+
+		<tr>
+			<td class="title">
+				From the Outside Looking In: Probing Web APIs to Build Detailed Workload Profiles 
+			</td>
+			<td class="author">
+				Nan Deng, Zichen Xu, Christopher Stewart, Xiaorui Wang
+			</td>
+			<td class="event">
+				USENIX Workshop on Feedback Computing
+			</td>
+			<td class="location">
+				Philadelphia, PA
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/dengfeedback14.pdf">pdf</a><br />
+				<a class="ppt" href="http://www.cse.ohio-state.edu/~cstewart/Papers/dengfeedback14-pres.pdf">ppt</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/deng2014from">bibtex</a><br />
+				<a class="event" href="https://www.usenix.org/conference/feedbackcomputing14">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				Managing Tiny Tasks for Data-Parallel, Subsampling Workloads
+			</td>
+			<td class="author">
+				Sundeep Kambhampati, Jaimie Kelley, William C.L. Stewart, Christopher Stewart, Rajiv Ramnath
+			</td>
+			<td class="event">
+				IEEE International Conference on Cloud Engineering
+			</td>
+			<td class="location">
+				Boston, MA
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/kambhampatiic2e14.pdf">pdf</a><br />
+				<a class="ppt" href="http://www.cse.ohio-state.edu/~cstewart/Papers/kambhampatiic2e14-pres.pdf">ppt</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/kambhampati2014managing">bibtex</a><br />
+				<a class="event" href="http://conferences.computer.org/IC2E/2014/">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				Implementing Replication for Predictability within Apache Thrift
+			</td>
+			<td class="author">
+				Jianwei Tu, Christopher Stewart
+			</td>
+			<td class="event">
+				The Ohio State University Technical Report
+			</td>
+			<td class="location">
+				Columbus, OH
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/jianweitr14.pdf">pdf</a><br />
+				<a class="ppt" href="http://www.cse.ohio-state.edu/~cstewart/Papers/jianweitr14.pdf">ppt</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/tu-implementing-2014">bibtex</a><br />
+				<a class="event" href="http://www.arxiv.org">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				Topic words analysis based on LDA model
+			</td>
+			<td class="author">
+				Xi Qiu
+			</td>
+			<td class="event">
+				The Ohio State University Technical Report
+			</td>
+			<td class="location">
+				Columbus, OH
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/qiutechreport14.pdf">pdf</a><br />
+				<a class="ppt" href="http://arxiv.org/abs/1405.3726.pdf">ppt</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/qiu-topic-2014">bibtex</a><br />
+				<a class="event" href="http://www.arxiv.org">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				Map-Reduce Parallelization of Motif Discovery
+			</td>
+			<td class="author">
+				Umang Vipal
+			</td>
+			<td class="event">
+				The Ohio State University Technical Report
+			</td>
+			<td class="location">
+				Columbus, OH
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/vipaltechreport14.pdf">pdf</a><br />
+				<a class="ppt" href="http://arxiv.org/abs/1405.0354.pdf">ppt</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/vipal-map-reduce-2014">bibtex</a><br />
+				<a class="event" href="http://www.arxiv.org">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				An Efficient and Balanced Platform for Data-Parallel Subsampling Workloads
+			</td>
+			<td class="author">
+				Sundeep Kambhampati, Christopher Stewart
+			</td>
+			<td class="event">
+				Masters Thesis, The Ohio State Technical Report
+			</td>
+			<td class="location">
+				Columbus, OH
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/kambhampatitechreport14.pdf">pdf</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/kambhampati-an-2014">bibtex</a><br />
+				<a class="event" href="http://www.arxiv.org">event</a><br />
+			</td>
+		</tr>
+
+	</table>
+	<span id="year-2013" class="anchor"></span>
+	<div class="year">
+		2013
+	</div>
+	<table class="table">
+
+		<tr>
+			<th class="title">Title</th>
+			<th class="author">Author</th>
+			<th class="event">Event</th>
+			<th class="location">Location</th>
+			<th class="link">Link</th>
+		</tr>
+
+		<tr>
+			<td class="title">
+				Cache Provisioning for Interactive NLP Services
+			</td>
+			<td class="author">
+				Jaimie Kelley, Christopher Stewart, Sameh Elnikety, Yuxiong He
+			</td>
+			<td class="event">
+				ACM Large and Distributed Systems and Middleware
+			</td>
+			<td class="location">
+				Nemacolin, PA
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/kelleyladis13.pdf">pdf</a><br />
+				<a class="ppt" href="http://www.cse.ohio-state.edu/~cstewart/Papers/kelleyladis13-pres.pdf">ppt</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/kelley2013cache">bibtex</a><br />
+				<a class="event" href="http://ladisworkshop.org/node/10">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				Balanced and Predictable Networked Storage
+			</td>
+			<td class="author">
+				Jaimie Kelley, Christopher Stewart
+			</td>
+			<td class="event">
+				IEEE International Workshop on Data Center Performance
+			</td>
+			<td class="location">
+				Philadelphia, PA
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/kelleydcperf13.pdf">pdf</a><br />
+				<a class="ppt" href="http://www.cse.ohio-state.edu/~cstewart/Papers/kelleydcperf13-pres.pdf">ppt</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/kelley2013balanced">bibtex</a><br />
+				<a class="event" href="http://www.zurich.ibm.com/dcperf13/">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				Zoolander: Efficiently Meeting Very Strict, Low-Latency SLOs
+			</td>
+			<td class="author">
+				Christopher Stewart, Aniket Chakrabarti, Rean Griffith
+			</td>
+			<td class="event">
+				IEEE International Conference on Autonomic Computing
+			</td>
+			<td class="location">
+				San Jose, CA
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/stewarticac13.pdf">pdf</a><br />
+				<a class="ppt" href="http://www.cse.ohio-state.edu/~cstewart/Papers/stewarticac13-pres.pdf">ppt</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/stewart2013zoolander">bibtex</a><br />
+				<a class="event" href="https://www.usenix.org/conference/icac13">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				GreenMail: Reducing Email Service's Carbon Emission with Minimum Cost
+			</td>
+			<td class="author">
+				Chen Li
+			</td>
+			<td class="event">
+				Masters Thesis, The Ohio State University Technical Report
+			</td>
+			<td class="location">
+				Columbus, OH
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/litr13.pdf">pdf</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/">bibtex</a><br />
+				<a class="event" href="http://www.cse.ohio-state.edu/research/techReport.shtml">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				MantisMail: Green Content Delivery for Email (Extended Abstract)
+			</td>
+			<td class="author">
+				Nan Deng, Chen Li, Christopher Stewart, Xiaorui Wang
+			</td>
+			<td class="event">
+				Poster at USENIX Conference on Networked Systems Design and
+			</td>
+			<td class="location">
+				Lombard, IL
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/dengnsdi13.pdf">pdf</a><br />
+				<a class="ppt" href="http://www.cse.ohio-state.edu/~cstewart/Papers/dengnsdi13-poster.pdf">ppt</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/deng-mantismail-2013">bibtex</a><br />
+				<a class="event" href="https://www.usenix.org/conference/nsdi13">event</a><br />
+			</td>
+		</tr>
+
+	</table>
+	<span id="year-2012" class="anchor"></span>
+	<div class="year">
+		2012
+	</div>
+	<table class="table">
+
+		<tr>
+			<th class="title">Title</th>
+			<th class="author">Author</th>
+			<th class="event">Event</th>
+			<th class="location">Location</th>
+			<th class="link">Link</th>
+		</tr>
+
+		<tr>
+			<td class="title">
+				Adaptive Green Hosting
+			</td>
+			<td class="author">
+				Nan Deng, Christopher Stewart, Jaimie Kelley, Daniel Gmach, Martin Arlitt
+			</td>
+			<td class="event">
+				IEEE International Conference on Autonomic Computing
+			</td>
+			<td class="location">
+				San Jose, CA
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/dengicac12.pdf">pdf</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/deng2012adaptive">bibtex</a><br />
+				<a class="event" href="http://icac2012.cs.fiu.edu/">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				Electric Grid Balancing through Low-Cost Workload Migration
+			</td>
+			<td class="author">
+				David Chiu, Christopher Stewart, Bart McManus
+			</td>
+			<td class="event">
+				ACM GreenMetrics Workshop
+			</td>
+			<td class="location">
+				London, UK
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/greenmetrics12.pdf">pdf</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/chiu2012electric">bibtex</a><br />
+				<a class="event" href="http://www.sigmetrics.org/greenmetrics/">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				Policy and Mechanism for Carbon-Aware Cloud Applications
+			</td>
+			<td class="author">
+				Nan Deng, Christopher Stewart, Daniel Gmach, Martin Arlitt
+			</td>
+			<td class="event">
+				IEEE Network Operations and Management Symposium 
+			</td>
+			<td class="location">
+				Maui, Hawaii
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/dengnoms12.pdf">pdf</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/deng2012policy">bibtex</a><br />
+				<a class="event" href="http://www.ieee-noms.org">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				Carbon-Aware Cloud Application
+			</td>
+			<td class="author">
+				Nan Deng
+			</td>
+			<td class="event">
+				IEEE Network Operations and Management Symposium
+			</td>
+			<td class="location">
+				Maui, Hawaii
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/dengnoms12-2.pdf">pdf</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/deng2012carbon-aware">bibtex</a><br />
+				<a class="event" href="http://www.ieee-noms.org">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				Zoolander: Efficient Latency Management in NoSQL Stores
+			</td>
+			<td class="author">
+				Aniket Chakrabarti, Christopher Stewart, Daiyi Yang, Rean Griffith
+			</td>
+			<td class="event">
+				Poster at International Middleware Conference
+			</td>
+			<td class="location">
+				Montreal, ON
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/chakrabartimiddleware12.pdf">pdf</a><br />
+				<a class="ppt" href="http://www.cse.ohio-state.edu/~cstewart/Papers/chakrabartimiddleware12-poster.pdf">ppt</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/chakrabarti-zoolander-2012">bibtex</a><br />
+				<a class="event" href="http://www.middleware-conference.org/2012/">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				Graduated Locality-Aware Scheduling for Search Engines
+			</td>
+			<td class="author">
+				Jaimie Kelley, Christopher Stewart
+			</td>
+			<td class="event">
+				Poster at International Middleware Conference
+			</td>
+			<td class="location">
+				Montreal, ON
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/kelleymiddleware12.pdf">pdf</a><br />
+				<a class="ppt" href="http://www.cse.ohio-state.edu/~cstewart/Papers/kelleymiddleware12-poster.pdf">ppt</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/kelley-graduated-2012">bibtex</a><br />
+				<a class="event" href="http://www.middleware-conference.org/2012/">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				Caching for Sustainability
+			</td>
+			<td class="author">
+				Alexander Bunch, Christopher Stewart
+			</td>
+			<td class="event">
+				Undergraduate Thesis, The Ohio State University Technical Report
+			</td>
+			<td class="location">
+				Columbus, OH
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/bunchtr12.pdf">pdf</a><br />
+				<a class="ppt" href="http://www.cse.ohio-state.edu/~cstewart/Papers/bunchtr12-pres.pdf">ppt</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/">bibtex</a><br />
+				<a class="event" href="http://www.cse.ohio-state.edu/research/techReport.shtml">event</a><br />
+			</td>
+		</tr>
+
+	</table>
+	<span id="year-2011" class="anchor"></span>
+	<div class="year">
+		2011
+	</div>
+	<table class="table">
+
+		<tr>
+			<th class="title">Title</th>
+			<th class="author">Author</th>
+			<th class="event">Event</th>
+			<th class="location">Location</th>
+			<th class="link">Link</th>
+		</tr>
+
+		<tr>
+			<td class="title">
+				Power Provisioning for Diverse Datacenter Workloads
+			</td>
+			<td class="author">
+				Christopher Stewart, Jing Li
+			</td>
+			<td class="event">
+				ACM Workshop on Energy-Efficient Design
+			</td>
+			<td class="location">
+				San Jose, CA
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/stewartweed11.pdf">pdf</a><br />
+				<a class="ppt" href="http://www.cse.ohio-state.edu/~cstewart/Papers/stewartweed11-pres.pdf">ppt</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/stewart2011power">bibtex</a><br />
+				<a class="event" href="http://research.ihost.com/weed2011/">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				Concentrating Renewable Energy in Grid-Tied Datacenters (awarded of Third Best Paper)
+			</td>
+			<td class="author">
+				Nan Deng, Christopher Stewart, Jing Li
+			</td>
+			<td class="event">
+				IEEE International Symposium on Sustainable Systems Technology
+			</td>
+			<td class="location">
+				Chicago, IL
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/dengissst11.pdf">pdf</a><br />
+				<a class="ppt" href="http://www.cse.ohio-state.edu/~cstewart/Papers/dengissst11-pres.pdf">ppt</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/deng2011concentrating">bibtex</a><br />
+				<a class="event" href="http://www.ieee-issst.org/">event</a><br />
+			</td>
+		</tr>
+
+	</table>
+	<span id="year-2010" class="anchor"></span>
+	<div class="year">
+		2010
+	</div>
+	<table class="table">
+
+		<tr>
+			<th class="title">Title</th>
+			<th class="author">Author</th>
+			<th class="event">Event</th>
+			<th class="location">Location</th>
+			<th class="link">Link</th>
+		</tr>
+
+		<tr>
+			<td class="title">
+				EntomoModel: Understanding and Avoiding Performance Anomaly Manifestations (winner of Best Paper Award)
+			</td>
+			<td class="author">
+				Christopher Stewart, Kai Shen, Arun Iyengar, Jian Yin
+			</td>
+			<td class="event">
+				IEEE Symposium on Modeling, Analysis and Simulation of Computer and Telecommunication Systems
+			</td>
+			<td class="location">
+				Miami Beach, FL
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/stewartmascots10.pdf">pdf</a><br />
+				<a class="ppt" href="http://www.cse.ohio-state.edu/~cstewart/Papers/stewartmascots10-pres.pdf">ppt</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/stewart2010entomomodel">bibtex</a><br />
+				<a class="event" href="http://mascots2010.cis.fiu.edu/">event</a><br />
+			</td>
+		</tr>
+
+	</table>
+	<span id="year-2009" class="anchor"></span>
+	<div class="year">
+		2009
+	</div>
+	<table class="table">
+
+		<tr>
+			<th class="title">Title</th>
+			<th class="author">Author</th>
+			<th class="event">Event</th>
+			<th class="location">Location</th>
+			<th class="link">Link</th>
+		</tr>
+
+		<tr>
+			<td class="title">
+				Some Joules Are More Precious Than Others: Managing Renewable Energy in the Datacenter
+			</td>
+			<td class="author">
+				Christopher Stewart, Kai Shen
+			</td>
+			<td class="event">
+				ACM Workshop on Power Aware Computing and Systems
+			</td>
+			<td class="location">
+				Big Sky, MT
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/stewarthotpower09.pdf">pdf</a><br />
+				<a class="ppt" href="http://www.cse.ohio-state.edu/~cstewart/Papers/stewarthotpower09-pres.pdf">ppt</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/stewart2009some">bibtex</a><br />
+				<a class="event" href="http://hotpower09.stanford.edu/">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				Reference-Driven Performance Anomaly Identification
+			</td>
+			<td class="author">
+				Kai Shen, Christopher Stewart, Chuanpeng Li, Xin Li
+			</td>
+			<td class="event">
+				ACM International Conference on Measurement and Modeling of Computer Systems
+			</td>
+			<td class="location">
+				Seattle, WA
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cs.rochester.edu/u/kshen/papers/sigmetrics2009.pdf">pdf</a><br />
+				<a class="ppt" href="http://www.cs.rochester.edu/~kshen/papers/sigmetrics2009.pptx">ppt</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/shen2009reference-driven">bibtex</a><br />
+				<a class="event" href="http://conferences.sigmetrics.org/sigmetrics/2009/">event</a><br />
+			</td>
+		</tr>
+
+	</table>
+	<span id="year-2008" class="anchor"></span>
+	<div class="year">
+		2008
+	</div>
+	<table class="table">
+
+		<tr>
+			<th class="title">Title</th>
+			<th class="author">Author</th>
+			<th class="event">Event</th>
+			<th class="location">Location</th>
+			<th class="link">Link</th>
+		</tr>
+
+		<tr>
+			<td class="title">
+				Operational Analysis of Parallel Servers
+			</td>
+			<td class="author">
+				Terence Kelly, Kai Shen, Alex Zhang, Christopher Stewart
+			</td>
+			<td class="event">
+				Modeling, Analysis, and Simulation of Computer and Telecommunication Systems
+			</td>
+			<td class="location">
+				Baltimore, MD
+			</td>
+			<td class="link">
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/kelly2008operational">bibtex</a><br />
+				<a class="event" href="http://www.mascots-conference.org/">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				Empirical Examination of A Collaborative Web Application
+			</td>
+			<td class="author">
+				Christopher Stewart, Matthew Leventi, Kai Shen
+			</td>
+			<td class="event">
+				IEEE International Symposium on Workload Characterization (special session on Benchmark Innovation)
+			</td>
+			<td class="location">
+				Seattle, WA
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/stewartiiswc08.pdf">pdf</a><br />
+				<a class="ppt" href="http://www.cse.ohio-state.edu/~cstewart/Papers/stewartiiswc08-pres.pdf">ppt</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/stewart2008empirical">bibtex</a><br />
+				<a class="event" href="http://www.cse.ohio-state.edu/~cstewart/Papers/stewartiiswc08-pres.pdf">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				Configuration-Space Performance Anomaly Depiction
+			</td>
+			<td class="author">
+				Christopher Stewart, Kai Shen
+			</td>
+			<td class="event">
+				Workshop on Large Scale Distributed Systems and Middleware
+			</td>
+			<td class="location">
+				Yorktown, NY
+			</td>
+			<td class="link">
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/stewart2008configuration-space">bibtex</a><br />
+				<a class="event" href="http://www.cs.cornell.edu/projects/ladis2008/index.htm">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				Challenges Facing Tomorrow's Datacenter: Summary of the LADiS Workshop
+			</td>
+			<td class="author">
+				Robbert van Renesse, Rodrigo Rodrigues, Mike Spreitzer, Christopher Stewart, Doug Terry, Franco Travostino
+			</td>
+			<td class="event">
+				Workshop on Large Scale Distributed Systems and Middleware
+			</td>
+			<td class="location">
+				Yorktown, NY
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/renesseladis08-summary.pdf">pdf</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/van2008challenges">bibtex</a><br />
+				<a class="event" href="http://www.cs.cornell.edu/projects/ladis2008/index.htm">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				Operational Analysis of Processor Speed Scaling
+			</td>
+			<td class="author">
+				Kai Shen, Alex Zhang, Terence Kelly, Christopher Stewart
+			</td>
+			<td class="event">
+				Brief Announcement at the Symposium on Parallelism in Algorithms and Architectures
+			</td>
+			<td class="location">
+				Munich, Germany
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cs.rochester.edu/u/kshen/papers/spaa2008.pdf">pdf</a><br />
+				<a class="ppt" href="http://www.cse.ohio-state.edu/~cstewart/Papers/shenspaa08-pres.pdf">ppt</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/shen-operational-2008">bibtex</a><br />
+				<a class="event" href="http://www.spaa-conference.org/">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				A Dollar From 15 Cents: Cross-Platform Management for Internet Services
+			</td>
+			<td class="author">
+				Christopher Stewart, Terence Kelly, Alex Zhang, Kai Shen
+			</td>
+			<td class="event">
+				USENIX Annual Technical Conference
+			</td>
+			<td class="location">
+				Boston, MA
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/stewartusenix08.pdf">pdf</a><br />
+				<a class="ppt" href="http://www.cse.ohio-state.edu/~cstewart/Papers/stewartusenix08-pres.pdf">ppt</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/stewart2008a">bibtex</a><br />
+				<a class="event" href="http://www.usenix.org/event/usenix08">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				Re-Evaluating the Evalution-- Does Performance Still Matter?
+			</td>
+			<td class="author">
+				Christopher Stewart, Kai Shen
+			</td>
+			<td class="event">
+				Abstract for the Wild and Crazy Ideas Session of ASPLOS
+			</td>
+			<td class="location">
+				Seattle, Washington
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/stewartwildandcrazy.pdf">pdf</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/stewart2008re-evaluating">bibtex</a><br />
+				<a class="event" href="http://www.cse.ucsd.edu/users/swanson/WACI-VI/">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				Hardware Counter Driven On-the-Fly Request Signatures
+			</td>
+			<td class="author">
+				Kai Shen, Ming Zhong, Sandhya Dwarkadas, Chuanpeng Li, Christopher Stewart, Xiao Zhang
+			</td>
+			<td class="event">
+				Conference on Architectural Support for Programming Languages and Operating Systems
+			</td>
+			<td class="location">
+				Seattle, WA
+			</td>
+			<td class="link">
+				<a class="ppt" href="http://www.cs.rochester.edu/%7Ekshen/papers/asplos2008.pdf">ppt</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/shen2008hardware">bibtex</a><br />
+				<a class="event" href="http://research.microsoft.com/asplos08/">event</a><br />
+			</td>
+		</tr>
+
+	</table>
+	<span id="year-2007" class="anchor"></span>
+	<div class="year">
+		2007
+	</div>
+	<table class="table">
+
+		<tr>
+			<th class="title">Title</th>
+			<th class="author">Author</th>
+			<th class="event">Event</th>
+			<th class="location">Location</th>
+			<th class="link">Link</th>
+		</tr>
+
+		<tr>
+			<td class="title">
+				AutoParam: Automated Control of Application-Level Performance in Virtualized Server Environments
+			</td>
+			<td class="author">
+				Zhikui Wang, Xue Liu, Alex Zhang, Christopher Stewart, Xiaoyun Zhu, Terence Kelly
+			</td>
+			<td class="event">
+				Feedback Control Implementation and Design in Computing Systems and Networks
+			</td>
+			<td class="location">
+				Munich, Germany
+			</td>
+			<td class="link">
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/wang2007autoparam">bibtex</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				Exploiting Nonstationarity For Performance Prediction
+			</td>
+			<td class="author">
+				Christopher Stewart, Terence Kelly, Alex Zhang
+			</td>
+			<td class="event">
+				European Conference on Computer Systems
+			</td>
+			<td class="location">
+				Lisbon, Portugal
+			</td>
+			<td class="link">
+				<a class="ppt" href="http://www.cse.ohio-state.edu/~cstewart/Papers/stewarteurosys07.pdf">ppt</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/stewart2007exploiting">bibtex</a><br />
+				<a class="event" href="http://www.eurosys.org/">event</a><br />
+			</td>
+		</tr>
+
+	</table>
+	<span id="year-2006" class="anchor"></span>
+	<div class="year">
+		2006
+	</div>
+	<table class="table">
+
+		<tr>
+			<th class="title">Title</th>
+			<th class="author">Author</th>
+			<th class="event">Event</th>
+			<th class="location">Location</th>
+			<th class="link">Link</th>
+		</tr>
+
+		<tr>
+			<td class="title">
+				Comprehensive Depiction of Configuration-dependent Performance Anomalies in Distributed Server Systems
+			</td>
+			<td class="author">
+				Christopher Stewart, Ming Zhong, Kai Shen, Tom O'Neill
+			</td>
+			<td class="event">
+				USENIX Hot Topics in System Dependability
+			</td>
+			<td class="location">
+				Seattle, Washington
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/stewarthotdep06.pdf">pdf</a><br />
+				<a class="ppt" href="http://www.cse.ohio-state.edu/~cstewart/Papers/stewarthotdep06.ppt">ppt</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/stewart2006comprehensive">bibtex</a><br />
+				<a class="event" href="http://www.cse.ohio-state.edu/~cstewart/Papers/stewarthotdep06.ppt">event</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				Realism and Simplicity: Disk Simulation for Instructional OS Performance Evaluation
+			</td>
+			<td class="author">
+				Peter Derosa, Kai Shen, Christopher Stewart, Jonathon Pearson
+			</td>
+			<td class="event">
+				ACM SIGCSE Technical Symposium
+			</td>
+			<td class="location">
+				Houston, Texas
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/vesper.pdf">pdf</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/derosa2006realism">bibtex</a><br />
+				<a class="event" href="http://www.cse.ohio-state.edu/~cstewart/Papers/vesper.pdf">event</a><br />
+			</td>
+		</tr>
+
+	</table>
+	<span id="year-2005" class="anchor"></span>
+	<div class="year">
+		2005
+	</div>
+	<table class="table">
+
+		<tr>
+			<th class="title">Title</th>
+			<th class="author">Author</th>
+			<th class="event">Event</th>
+			<th class="location">Location</th>
+			<th class="link">Link</th>
+		</tr>
+
+		<tr>
+			<td class="title">
+				Adaptive Middleware for Component-Level Deployment
+			</td>
+			<td class="author">
+				Mick Jordan, Christopher Stewart
+			</td>
+			<td class="event">
+				Workshop on Adaptive and Reflective Middleware
+			</td>
+			<td class="location">
+				Grenoble, France
+			</td>
+			<td class="link">
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/jordan2005adaptive">bibtex</a><br />
+			</td>
+		</tr>
+		<tr>
+			<td class="title">
+				Performance Modeling and System Management for Multi-component Online Services
+			</td>
+			<td class="author">
+				Christopher Stewart, Kai Shen
+			</td>
+			<td class="event">
+				Symposium on Networked Systems Design and Implementation
+			</td>
+			<td class="location">
+				Boston, MA
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/stewartnsdi05.pdf">pdf</a><br />
+				<a class="ppt" href="http://www.cse.ohio-state.edu/~cstewart/Papers/stewartnsdi05.ppt">ppt</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/stewart2005performance">bibtex</a><br />
+				<a class="event" href="http://www.usenix.org/events/nsdi05/">event</a><br />
+			</td>
+		</tr>
+
+	</table>
+	<span id="year-2004" class="anchor"></span>
+	<div class="year">
+		2004
+	</div>
+	<table class="table">
+
+		<tr>
+			<th class="title">Title</th>
+			<th class="author">Author</th>
+			<th class="event">Event</th>
+			<th class="location">Location</th>
+			<th class="link">Link</th>
+		</tr>
+
+		<tr>
+			<td class="title">
+				Profile-driven Component Placement for Cluster-based Online Services
+			</td>
+			<td class="author">
+				Christopher Stewart, Kai Shen, Sandhya Dwarkadas, Michael L. Scott, Jian Yin
+			</td>
+			<td class="event">
+				International Middleware Conference
+			</td>
+			<td class="location">
+				Toronto, ON
+			</td>
+			<td class="link">
+				<a class="pdf" href="http://www.cse.ohio-state.edu/~cstewart/Papers/middleware-paper.pdf">pdf</a><br />
+				<a class="ppt" href="http://www.cse.ohio-state.edu/~cstewart/Papers/middleware.ppt">ppt</a><br />
+				<a class="bib" href="http://web.cse.ohio-state.edu/~stewart.962/bibtex/stewart2004profile-driven">bibtex</a><br />
+				<a class="event" href="http://www.eecg.toronto.edu/middleware2004/">event</a><br />
+			</td>
+		</tr>
+
+	</table>
+</div>
+
+    </div>
+    <!-- Author: Mike -->
+<!-- Created: 6/20 -->
+<!-- Edit: 6/24 Gail used asset helper to send emails. -->
+<!-- Description: The footer shows the webpage is designed by the team MAGiC and allows the users to reach the team via email.-->
+
+<footer>
+	<p>Design by MAG&iexcl;C <a href="mailto:osu.magic.team@gmail.com">Email Us</a></p>
+</footer>
+
+  </body>
+</html>

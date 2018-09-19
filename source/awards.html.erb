@@ -1,0 +1,64 @@
+---
+title: Awards
+css: awards.css
+---
+<!--
+  Created by: Channing Jacobs
+  Date: 6/24
+  Description: Awards HTML page generation.
+-->
+
+<% require_relative "../lib/award.rb" %>
+<% awards = Marshal.load File.read("data/awards_data") %>
+
+<div id="awards_heading">
+  <h1 id="favorite_awards_nav">Awards and Accomplishments</h1>
+</div>
+
+<div id="awards_container">
+<% awards.each_index do |award_index| %>
+
+  <% if award_index == 0 %>
+    <div id="favorite_awards">
+    <h2><i class="fas fa-trophy"></i> Favorite Awards</h2>
+  <% end %>
+
+  <div class="award_content">
+    <% if awards[award_index].title =="President's Scholarship, Morehouse College, 1999" %>
+      <h4 id="other_awards_nav"><%= awards[award_index].title %></h4>
+    <% else %>
+      <h4><%= awards[award_index].title %></h4>
+    <% end %>
+    <p><%= awards[award_index].description %></p>
+    <% if (awards[award_index].link.size != 0) %>
+      <%= link_to("[info]","#{awards[award_index].link}", class: "link") %>
+    <% end %>
+    <hr />
+  </div>
+
+  <% if award_index == 6 %>
+    </div>
+    <br />
+    <div id="other_awards">
+    <h2><i class="fas fa-trophy"></i> Other Awards</h2>
+  <% end %>
+
+  <% if award_index==awards.length-1 %>
+    </div>
+    <br />
+  <% end %>
+<% end %>
+</div>
+
+<!-- Side menu to jump to favorite and other awards -->
+<div id="awards_sidebar">
+  <div>
+    Awards
+  </div>
+  <div>
+    <a href="#favorite_awards_nav">Favorite</a>
+  </div>
+  <div>
+    <a href="#other_awards_nav">Other</a>
+  </div>
+</div>

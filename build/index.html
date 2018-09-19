@@ -1,0 +1,106 @@
+<!--
+  Created by: Channing Jacobs
+  Date: 6/20
+  Description: Layout of each HTML page used for static site generation. A
+  partial is used for the nav bar at the top and the footer at the bottom. The
+  body html is yielded to each page that is loaded.
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title>Christopher Stewart</title>
+    <!-- Global css and linking -->
+    <base target="_top">
+  	<link rel="stylesheet" href="stylesheets/site.css" />
+  	<link rel="stylesheet" href="stylesheets/navigation.css" />
+  	<link rel="stylesheet" href="stylesheets/footer.css" />
+    <link rel="stylesheet" href="stylesheets/fontawesome-5.1.0/css/all.css" />
+    <!-- Specific css for individual page -->
+    <link rel="stylesheet" href="stylesheets/index.css"/>
+  </head>
+  <body id="main">
+    <!--
+  Created by: Channing Jacobs
+  Date: 6/20
+  Description: Layout of the navigation bar for use at the top of each page.
+  Edit: 6/23 Ariel add icons and background for active nav element
+-->
+<div class="navbar">
+  <nav id="sitenav">
+    <a href="index.html" class='active'><i class='fas fa-home'></i>  Home</a>
+    <a href="publication.html" >   Publications</a>
+    <a href="awards.html" >   Awards</a>
+    <div class='dropdown' >
+      Lab
+      <div class="dropdown-content">
+        <a href="lab.html" >    Lab</a>
+        <a href="lab.html#people_nav">   People</a>
+        <a href="lab.html#project_nav">    Projects</a>
+      </div>
+    </div>
+    <a href="contact.html" >  Contact</a>
+  </nav>
+</div>
+
+    <div class="content-container">
+    <!-- Author: Gail Chen
+Created: 6/20
+Edit: 6/24 Gail updated the link paths to other pages.
+Description: Christopher Stewart's home page with brief Biography. -->
+
+<!-- Section with a photo and job titles -->
+<h1>Christopher Stewart</h1>
+<div class="content" id="bio-pic">
+  <div class="outer">
+    <div class="container">
+      <div class="inner">
+        <img style="margin-right:1em; float:left; top:89px; left:345px; height:180px;" alt="image not available" src="images/cstewart.2018.jpg" height="180" />
+      </div>
+
+      <div class="inner">
+        <p>Associate Professor, <a href="http://web.cse.ohio-state.edu/">Computer Science and Engineering</a><br/>
+          Chair, <a href="http://stc-sustainable-computing.ieee.net/">IEEE Sustainable Computing STC</a><br/>
+          Faculty Advisor, <a href="https://acmwosu.github.io/">ACM-W</a><br/>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Brief Biography -->
+<div class="content">
+  <p>
+    Dr. Stewart leads the <a href="lab.html">ReRout Lab</a> which produces computer systems research that reaches out.&nbsp;He is a recipient of the prestigious <a href="http://www.nsf.gov/funding/pgm_summ.jsp?pims_id=503214">NSF Career Award</a>.&nbsp;He received a PhD from the <a href="http://www.cs.rochester.edu">University of Rochester</a> under the supervision of <a href="http://www.cs.rochester.edu/u/kshen">Kai Shen</a>.&nbsp;He also graduated from <a href="http://www.morehouse.edu">Morehouse College</a>.
+  </p>
+  <hr />
+  <h3 class="sketch">Brief Biographical Sketch</h3>
+  <p>
+    Dr. Stewart is an Associate Professor in the Computer Science and Engineering Department and Faculty-In-Residence in the Translational Data Analytics Institute (TDAI) at The Ohio State University.  He leads the <a href="lab.html">ReRout Lab</a> where high-impact research produces novel systems and diverse expertise that broadens computer science, i.e., research that reaches out.&nbsp;Dr. Stewart's research has led to fundamental intellectual contributions on the design of  cloud computing systems, sustainable computing systems and STEM education. Common themes across his work are rigorous but usable mathematical models and end-to-end validation of the models using prototypes implemented within widely used systems software components.  Dr. Stewart's recent research focuses on 1) supporting interactive Internet services in the era of dark silicon (i.e., post Dennard Scaling) and 2) systems support for autonomous systems and IoT.
+  <br />
+  </p>
+  <p>
+    Dr. Stewart is a recipient of the prestigious <a href="http://www.nsf.gov/funding/pgm_summ.jsp?pims_id=503214">NSF Career Award</a>.&nbsp;He has co-authored award papers at MASCOTS, ISSST and INFOCOM.&nbsp; He was the founding Chief Editor of the Sustainable Computing Register, the regular publication of the IEEE STC on Sustainable Computing.&nbsp;Dr. Stewart earned a PhD from the <a href="http://www.cs.rochester.edu/">University of Rochester</a> under the supervision of <a href="http://www.cs.rochester.edu/u/kshen">Kai Shen</a>. He also graduated from <a href="http://www.morehouse.edu/">Morehouse College</a>.
+  </p>
+<hr />
+  <h3 class="highlights">Highlights</h3>
+  <ul>
+    <li>In April 2018, we presented <a href="../data/morris2018modeldriven.pdf">Model-Driven Computational Sprinting</a> at the European Conference on Computer Systems (EuroSys). Our work addresses a common problem for cloud systems: when should I overclock servers given energy/themal limits? Our approach systematically explores all possible overclocking strategies and finds solutions that outperform state-of-the-art by up to 3.16X. </li>
+    <li>I am a PI on the <a href="https://latino-astudies.osu.edu/news/assistant-professor-arnulfo-p%C3%A9rez-wins-1.2-million-nsf-grant">Stem+C project</a>.  In 2017, we deployed a smart <a href="../data/siva2017preliminary.pdf">classroom platform</a> that was used to teach algebra and programming to over 1300 students in the Grove City School District. Siva Renganathan, the lead student, is now at Apple.</li>
+    <li>The OSU ACM-W chapter was named an outstanding chapter for 2016. In 2017, we sent a 24 women to the Grace Hopper Celebration of Women in Computing.</li>
+  </ul>
+</div>
+
+    </div>
+    <!-- Author: Mike -->
+<!-- Created: 6/20 -->
+<!-- Edit: 6/24 Gail used asset helper to send emails. -->
+<!-- Description: The footer shows the webpage is designed by the team MAGiC and allows the users to reach the team via email.-->
+
+<footer>
+	<p>Design by MAG&iexcl;C <a href="mailto:osu.magic.team@gmail.com">Email Us</a></p>
+</footer>
+
+  </body>
+</html>

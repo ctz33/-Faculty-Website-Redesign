@@ -1,0 +1,229 @@
+<!--
+  Created by: Channing Jacobs
+  Date: 6/20
+  Description: Layout of each HTML page used for static site generation. A
+  partial is used for the nav bar at the top and the footer at the bottom. The
+  body html is yielded to each page that is loaded.
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title>Lab</title>
+    <!-- Global css and linking -->
+    <base target="_top">
+  	<link rel="stylesheet" href="stylesheets/site.css" />
+  	<link rel="stylesheet" href="stylesheets/navigation.css" />
+  	<link rel="stylesheet" href="stylesheets/footer.css" />
+    <link rel="stylesheet" href="stylesheets/fontawesome-5.1.0/css/all.css" />
+    <!-- Specific css for individual page -->
+    <link rel="stylesheet" href="stylesheets/lab.css"/>
+  </head>
+  <body id="main">
+    <!--
+  Created by: Channing Jacobs
+  Date: 6/20
+  Description: Layout of the navigation bar for use at the top of each page.
+  Edit: 6/23 Ariel add icons and background for active nav element
+-->
+<div class="navbar">
+  <nav id="sitenav">
+    <a href="index.html" >  Home</a>
+    <a href="publication.html" >   Publications</a>
+    <a href="awards.html" >   Awards</a>
+    <div class='dropdown active'><i class='fas fa-flask'></i>
+      Lab
+      <div class="dropdown-content">
+        <a href="lab.html" class='active'><i class='fas fa-flask'></i>    Lab</a>
+        <a href="lab.html#people_nav">   People</a>
+        <a href="lab.html#project_nav">    Projects</a>
+      </div>
+    </div>
+    <a href="contact.html" >  Contact</a>
+  </nav>
+</div>
+
+    <div class="content-container">
+    <!-- Author: Ariel
+Created: 6/20
+Edit: 6/20 Ariel create data file student.json and link data to page
+      6/21 Ariel add projects and people list
+      6/23 Ariel add navtab and select list style
+      6/23 Gail display pictures properly
+      6/24 change image to video link
+Description:.ReRout overview, people list and project introduction -->
+
+<!-- lab overview -->
+<div class="lab_overview" id="overview">
+  <h1>ReRout Lab Overview</h1>
+  <div class="lab_intro">
+    <img src="images/rerout-sg.jpg" alt="image not available" />
+    <p>The ReRout Lab uses computer systems research to broaden participation in computer science.  Our premise is that novel, high-impact systems excite students, reach new classes of users, and demand diverse, out-of-the-box thinking. </p>
+  </div>
+  <div class="guild_list" >
+    <p><strong> The following principles guide our work:</strong></p>
+    <ol>
+      <li> Motivating and training the next generation of systems builders is paramount</li>
+      <li> Real, open, and usable systems prototypes have big impact</li>
+      <li> Well-solved research problems can qualitatively change a user's interaction with their computer</li>
+    </ol>
+    <p>
+      <strong id="people_nav">I am currently looking for students. If you have already applied to OSU and you want to join the ReRout Lab, send me an email with your CV. Note, admission to OSU is highly selective. I can not reply to all good candidates.</strong>
+    </p>
+    </div>
+</div>
+<!-- people list -->
+<div class="people" id="people">
+    <h1><i class="fas fa-users"></i>  People</h1>
+    <div class="select_list">
+      <label for="phdStudent" tabindex="0"></label>
+      <input id="phdStudent" type="radio" name="group" checked aria-hidden="true">
+      <p><span>PHD Students  </span></p>
+      <div class="phdStudent student_info">
+        <p><strong class="student_name">Jayson Boubin</strong>, <a href='https://www.linkedin.com/in/jayson-boubin-94a51a89/'>webpage</a></p>
+          <p>Research Highlights: Winner CSE Departmental Fellowship</p>
+        <p><strong class="student_name">Nathaniel Morris</strong>, <a href='http://web.cse.ohio-state.edu/~morris.743/pages/about.html'>webpage</a></p>
+          <p>Research Highlights: Ford Fellowship Honorable Mention, ICAC 2017 and SOSP 2017 Travel Grant; Developing novel models to predict response time under computational sprinting </p>
+        <p><strong class="student_name">Jaimie Kelley</strong>, <a href='https://denison.edu/people/jaimie-kelley'>webpage</a></p>
+          <p>Graduated 2017: Assistant Professor at Denison University (tenure track)</p>
+        <p><strong class="student_name">Aniket Chakrabarti</strong>, <a href='https://www.linkedin.com/in/aniket-chakrabarti-44651925/'>webpage</a></p>
+          <p>Graduated 2017: Applied Scientist at Microsoft AI and Research team</p>
+        <p><strong class="student_name">Zichen Xu (informal advisor)</strong>, <a href='https://www.linkedin.com/in/zichen-xu-5630a48/'>webpage</a></p>
+          <p>Graduated 2016: Associate Professor at Nanchang University</p>
+        <p><strong class="student_name">Nan Deng</strong>, <a href='https://www.linkedin.com/in/nan-deng-29057918/'>webpage</a></p>
+          <p>Graduated 2015: SWE in Cloud Computing at Google</p>
+      </div>
+
+      <label for="masterStudent" tabindex="0"></label>
+      <input id="masterStudent" type="radio" name="group" aria-hidden="true">
+      <p><span>Master Students  </span></p>
+      <div class="masterStudent student_info">
+          <p><strong class="student_name">Siva Meenakshi Renganathan</strong>, <span>2017, Apple</span></p>
+          <p><strong class="student_name">Rashmi Rao</strong>, <span>2017, Data scientist at Exact Software</span></p>
+          <p><strong class="student_name">Puja Gupta</strong>, <span>2015, Qualcomm</span></p>
+          <p><strong class="student_name">Sundeep Kambhampati</strong>, <span>2014 , Microsoft, Research Highlight: Parallelized version EAGLET now used in production (IC2E 2013)</span></p>
+          <p><strong class="student_name">Umang Vipal</strong>, <span>2014, a2z inc </span></p>
+          <p><strong class="student_name">Xi Qiu</strong>, <span>2014</span></p>
+          <p><strong class="student_name">Jianwei Tu</strong>, <span>2014, Snapchat</span></p>
+          <p><strong class="student_name">Chen Li</strong>, <span>2013, VMWare</span></p>
+          <p><strong class="student_name">Daiyi Yang</strong>, <span>2011, Reinvate</span></p>
+          <p><strong class="student_name">Jing Li</strong>, <span>2011, Microsoft</span></p>
+      </div>
+
+      <label for="undergdStudent" tabindex="0"></label>
+      <input id="undergdStudent" type="radio" name="group"  aria-hidden="true">
+      <p><span>Undergraduate Students  </span></p>
+      <div class="undergdStudent student_info">
+        <p><strong class="student_name">Shiqi Zhang</strong>, <span>2017</span></p>
+        <p><strong class="student_name">Stephanie Mohammed</strong>, <span>2016, Exact Software</span></p>
+        <p><strong class="student_name">Brian Carr</strong>, <span>2015, Microsoft </span></p>
+        <p><strong class="student_name">Xiaoran Hu</strong>, <span>2014, went to USC, Research highlight: Undergraduate thesis</span></p>
+        <p><strong class="student_name">Ashley Biales-Wise</strong>, <span>2014, first employment GM</span></p>
+        <p><strong class="student_name">Alex Bunch</strong>, <span>2012, went to Carnegie Mellon University Research highlight: Alex's undergraduate thesis laid the framework for https://www.datagreening.com</span></p>
+      </div>
+
+      <label for="intern" tabindex="0"></label>
+      <input id="intern" type="radio" name="group" aria-hidden="true">
+      <p id="project_nav"><span>Summer Interns  </span></p>
+      <div class="intern student_info">
+        <p><strong class="student_name">Onix Tarrat</strong>, <span>SROP, 2017</span></p>
+        <p><strong class="student_name">CeDale Smith</strong>, <span>SROP, 2014</span></p>
+        <p><strong class="student_name">Joel Poualeu</strong>, <span>DREU, 2010</span></p>
+        <p><strong class="student_name">Nelson Burgos</strong>, <span>DREU, 2010</span></p>
+      </div>
+  </div>
+
+</div>
+<!-- 3 projetcs -->
+<div class="projects" id="projects">
+  <h1><i class="fas fa-folder"></i> Projects</h1>
+  <div class="navtab">
+    <label for="project1" tabindex="0"></label>
+    <input id="project1" type="radio" name="project" checked aria-hidden="true">
+    <p>Greening as a Service</p>
+    <div class="project1">
+      <img src="images/mantismail.png" alt="image not available" />
+      <h2>Greening as a Service</h2>
+      <p>(Supported by: NSF CSR SMALL )</p>
+      <p>(Collaborators: Microsoft Research, Oak Ridge National Labs, Morehouse College, NCWIT, OSU Office of Diversity and Inclusion ) </p>
+      <h3>Research Challenge:</h3>
+      <p>
+        Internet services that provide search, e-commerce, and social networking have changed the world, but their growing carbon footprint is a concern.  By 2020, the annual carbon footprint of hosting centers worldwide is expected to exceed the footprint of the Netherlands.  Massive carbon footprints contribute to climate change and could lead to costly, punitive regulations.  Our research attempts to slow the growth of carbon footprints by moving Internet services to clean energy.  The challenge is that, as of today, most sources of clean energy are more expensive per joule than dirty sources.
+
+      </p>
+      <p>
+        We propose greening services, a new type of service that aligns clean energy goals with profit incentives.  Greening services use clean energy to power requests routed through their servers, even if those requests access servers run by other services.   In other words, a greening service is a service that makes other services green.  In our vision, greening services will use renewable energy credits or carbon offsets.  These transferable certificates undo greenhouse-gas emissions transparently, even when emissions occur in carbon-heavy areas, making them attractive to large-scale, geographically distributed services.
+      </p>
+      <p>
+        Greening services work because some users will prefer to route their requests through environmentally sustainable services.  Greening services can profit from those users without incurring the full costs of running large scale services.  However, greening services must manage their costs.  Our systems research studies the potential for caching on greening services.  We also study the challenge of accurately accounting the carbon footprint of remote servers.
+      </p>
+      <h3>Recommended Reading: </h3>
+      <p><a href="http://web.cse.ohio-state.edu/~stewart.962/Papers/dengicac12.pdf">Adaptive Green Hosting, ICAC 2012</a></p>
+      <p><a href="http://web.cse.ohio-state.edu/~stewart.962/Papers/dengissst11.pdf">ISSST 2010 (Third Best Paper)</a></p>
+      <h3>Impact: </h3>
+      <p>
+        <a href="https://www.datagreening.com/">Datagreening.com</a> is prototype greening service.  It moves email (specifically, IMAP) to clean energy.  The site is publically accessible in the Beta version.  Our goal is to offset 2 Tonnes of CO2E in 2014.  We support any type of email that can be accessed through IMAP, in particular we often host GMail, Yahoo, Hotmail users.
+      </p>
+      <h3>Media and Press Release:</h3>
+      <p>
+        Visit <a href="https://www.datagreening.com">https://www.datagreening.com</a>
+
+      </p>
+    </div>
+    <label for="project2" tabindex="0"></label>
+    <input id="project2" type="radio" name="project" aria-hidden="true">
+    <p>High Performance Cloud Infrastructure</p>
+    <div class="project2">
+      <h2>High Performance Cloud Infrastructure</h2>
+      <p>(Supported by: NSF CSR SMALL , Amazon Equipment Grant, Nationwide Children's Hostpital ) </p>
+      <p>(Collaborators: Nationwide Children's Hostpital, VMWare ) </p>
+      <h3>Research Challenge:</h3>
+      <p>
+        Over 90% of the world's digital data was produced in the last 2 years. The next generation of Internet services will access a lot of data for each user request, but neither processor speeds nor expectations for fast response times change.  We are building cloud infrastructure, e.g., key-value stores and data-parallel platforms, that can efficiently and scalably access large ammounts of data in seconds.  The increasing density of main memory serves as a building block for such services.  However, main memory systems are sensitive to performance anomalies at scale, i.e., 100 to 1000 threads per user request.  In such systems, response times can depend on the slowest main memory acceess times---not the average access times.  Unfortunately, access times in practice are not normally distributed.  The slowest accesses can 100X larger than the average, causing large delays.  It is also challenging to keep main memory systems fully utilized.  Small slowdowns caused by background jobs, compliance software, or garbage collection can ripple throughout the processing pipeline, leading to inefficient execution and slow response times.
+      </p>
+
+      <h3>Recommended Reading: </h3>
+      <p><a href="http://web.cse.ohio-state.edu/~stewart.962/Papers/stewartmascots10.pdf">Entomomodel..., MASCOTS 2010 (best paper)</a></p>
+      <p><a href="http://web.cse.ohio-state.edu/~stewart.962/Papers/kelleydcperf13.pdf">Balanced and Predictable Networked Storage, DCPerf 2013</a></p>
+      <p><a href="http://web.cse.ohio-state.edu/~stewart.962/Papers/stewarticac13.pdf">Zoolander..., ICAC 2013</a></p>
+      <p><a href="http://web.cse.ohio-state.edu/~stewart.962/Papers/kambhampatiic2e14.pdf">Managing Tiny Tasks for Data-Parallel, Subsampling Workloads, IC2E 2014</a></p>
+
+      <h3>Impact: </h3>
+      <p>Working with researchers at Nationwide Children's Hostpital, we have parallized <a href="http://www.mathmed.org/wclstewart/SOFT/EAGLET/eaglet.html">EAGLET</a>, a popular tool used to study disease causing genes by statistical geneticists. The EAGLET package comprises C, C++, Perl, and Bash code. It was written to maximize single-thread performance and usability. Rather than rewite the whole package, we integrated EAGLET into a data-parallel framework that could handle such legacy code: BashReduce. We have significantly extended BashReduce in this effort. Our parallel version will replace the existing EAGLET distribution on the software's next release. We also plan to release our <a href="http://rcrowley.org/2009/06/27/bashreduce.html">BashReduce</a> improvements as open source.
+      </p>
+      <p>We also developed Zoolander, a key value store that support strict service level objectives (e.g., 99.99% of gets and puts complete in less than 5ms). Zoolander uses commodity hardware and can extend any open source key value store (e.g., Redis or Zookeeper). We have scaled Zoolander up to 120 nodes on Amazon EC2, achieving requests rates at the scale of TripAdvisor while meeting strict SLOs.</p>
+      <h3>Media and Press Release:</h3>
+      <p>We expect a production release of EAGLET with our parallel infrastructure soon. Stay tuned. </p>
+    </div>
+    <label for="project3" tabindex="0"></label>
+    <input id="project3" type="radio" name="project" aria-hidden="true">
+    <p>Quality Aware Management</p>
+    <div class="project3">
+      <h2>Quality Aware Management</h2>
+      <p>(Supported by: NSF CSR SMALL ) </p>
+      <p>(Collaborators: Microsoft Research, Oak Ridge National Labs, Morehouse College, NCWIT, OSU Office of Diversity and Inclusion ) </p>
+      <h3>Research Challenge:</h3>
+      <p>For many next generation services, data will grow much faster than processing capacity.  These services will access only a portion of the data relevant to a user's query.  Our research helps services automatically 1) identify the most valuable data for each user request and 2) ensure it can be accessed readily and cost effectively.  Thus far, we have focused on natural language processing services, e.g., search engines and question-answering systems.  For a specific user request, NL data often contains redundancies, e.g., multiple web pages with the same information or multiple word phrases with same meaning.  These redundancies can crowd out useful data causing to NLP services to produce poor quality results.  Our contribution is systems support to measure quality for distributed services and, subsequently, manage resources cost effectively within quality constraints.</p>
+      <h3>Recommended Reading: </h3>
+      <p><a href="http://web.cse.ohio-state.edu/~stewart.962/Papers/kelleyladis13.pdf">Cache Provisioning for Interactive NLP Services, LADiS 2013 </a></p>
+      <p><a href="http://web.cse.ohio-state.edu/~stewart.962/Papers/kelleydcperf13.pdf">Balanced and Predictable Networked Storage, DCPerf 2013</a></p>
+      <h3>Media and Press Release:</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/eiA5Uo1uJHI" allowfullscreen></iframe>
+      <p>Outreach Event:  We recently brought middle school students participating in Camp Engineer to the ReRout Labs for a friendly Jeopardy match.  The middle schools students competed againt our Open Ephyra system (Open Ephyra is a question answering system like IBM Watson).  The Youtube video to the left summarizes the event and unveils the winner.</p>
+      </div>
+</div>
+</div>
+
+    </div>
+    <!-- Author: Mike -->
+<!-- Created: 6/20 -->
+<!-- Edit: 6/24 Gail used asset helper to send emails. -->
+<!-- Description: The footer shows the webpage is designed by the team MAGiC and allows the users to reach the team via email.-->
+
+<footer>
+	<p>Design by MAG&iexcl;C <a href="mailto:osu.magic.team@gmail.com">Email Us</a></p>
+</footer>
+
+  </body>
+</html>

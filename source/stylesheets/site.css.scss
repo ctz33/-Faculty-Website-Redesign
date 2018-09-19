@@ -1,0 +1,48 @@
+// Author: Ariel
+// Edit: Channing, help with color selection and font choice
+// Description: Standard css styling for website pages
+
+@import url("https://fonts.googleapis.com/css?family=Lato|Roboto+Condensed|Roboto");
+
+html,
+body {
+  min-width: 850px;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  // background-color: #dcdbda;
+  line-height: 1.4em;
+}
+
+.content-container {
+    margin: 40px auto 0px auto;
+    width: 70%;
+    z-index: 5;
+    position:relative;
+    top:3em;
+}
+
+// Set the color of the hyper link.
+a{
+  color: #ae190e;
+}
+
+// Set the color change when the mouse is hovering the navigation bar.
+a:hover{
+  color: #f37066;
+}
+
+// Changed the color of a visited hyper link.
+a:visited{
+  color: #6d0f09;
+}
+
+// Set the color of the headings.
+h1,h2,h3,h4{
+  color: #ae190e;
+}
+
+// Set the font family for the texts in table
+table{
+  font-family: 'Roboto Condensed', sans-serif;
+}

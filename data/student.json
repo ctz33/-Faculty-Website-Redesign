@@ -1,0 +1,39 @@
+/* Author: Ariel
+Created: 6/20
+Edit: 6/23 Ariel
+Description:people info*/
+
+{"phdStudent":[
+  {"name":"Jayson Boubin","page":"https://www.linkedin.com/in/jayson-boubin-94a51a89/","intro":"Research Highlights: Winner CSE Departmental Fellowship"},
+  {"name":"Nathaniel Morris","page":"http://web.cse.ohio-state.edu/~morris.743/pages/about.html","intro":"Research Highlights: Ford Fellowship Honorable Mention, ICAC 2017 and SOSP 2017 Travel Grant; Developing novel models to predict response time under computational sprinting "},
+  {"name":"Jaimie Kelley","page":"https://denison.edu/people/jaimie-kelley","intro":"Graduated 2017: Assistant Professor at Denison University (tenure track)"},
+  {"name":"Aniket Chakrabarti","page":"https://www.linkedin.com/in/aniket-chakrabarti-44651925/","intro":"Graduated 2017: Applied Scientist at Microsoft AI and Research team"},
+  {"name":"Zichen Xu (informal advisor)","page":"https://www.linkedin.com/in/zichen-xu-5630a48/","intro":"Graduated 2016: Associate Professor at Nanchang University"},
+  {"name":"Nan Deng","page":"https://www.linkedin.com/in/nan-deng-29057918/","intro":"Graduated 2015: SWE in Cloud Computing at Google"}
+],
+  "masterStudent":[
+  {"name":"Siva Meenakshi Renganathan","intro":"2017, Apple"},
+  {"name":"Rashmi Rao","intro":"2017, Data scientist at Exact Software"},
+  {"name":"Puja Gupta","intro":"2015, Qualcomm"},
+  {"name":"Sundeep Kambhampati","intro":"2014 , Microsoft, Research Highlight: Parallelized version EAGLET now used in production (IC2E 2013)"},
+  {"name":"Umang Vipal","intro":"2014, a2z inc "},
+  {"name":"Xi Qiu","intro":"2014"},
+  {"name":"Jianwei Tu","intro":"2014, Snapchat"},
+  {"name":"Chen Li","intro":"2013, VMWare"},
+  {"name":"Daiyi Yang","intro":"2011, Reinvate"},
+  {"name":"Jing Li","intro":"2011, Microsoft"}
+],
+  "undergdStudent":[
+    {"name":"Shiqi Zhang","intro":"2017"},
+    {"name":"Stephanie Mohammed","intro":"2016, Exact Software"},
+    {"name":"Brian Carr","intro":"2015, Microsoft "},
+    {"name":"Xiaoran Hu","intro":"2014, went to USC, Research highlight: Undergraduate thesis"},
+    {"name":"Ashley Biales-Wise","intro":"2014, first employment GM"},
+    {"name":"Alex Bunch","intro":"2012, went to Carnegie Mellon University Research highlight: Alex's undergraduate thesis laid the framework for https://www.datagreening.com"}
+],
+  "internStudent" :[
+    {"name":"Onix Tarrat","intro":"SROP, 2017"},
+    {"name":"CeDale Smith","intro":"SROP, 2014"},
+    {"name":"Joel Poualeu","intro":"DREU, 2010"},
+    {"name":"Nelson Burgos","intro":"DREU, 2010"}
+  ]}

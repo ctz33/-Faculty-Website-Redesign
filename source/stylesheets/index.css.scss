@@ -1,0 +1,42 @@
+// Author: Gail Chen
+// Created: 6/20
+// Edit: N/A
+// Description: Home page style sheet
+#bio-pic div {
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 3;
+  height: auto;
+  margin: auto;
+  text-align: center; }
+
+.content p {
+  text-align: left; }
+
+.outer {
+  height: 100%;
+  width: 100%;
+  display: table;
+  vertical-align: middle; }
+
+.container {
+  position: relative;
+  vertical-align: middle;
+  display: table-cell; }
+
+.inner {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative; }
+
+img {
+  border: 0;
+}
+
+div .content hr{
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
